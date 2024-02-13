@@ -1,0 +1,17 @@
+﻿@model List<Product>
+
+    ReturnProducts
+<div>Product: </div>
+
+
+@foreach (var mod in Model)
+{
+    <div>Product: </div>
+    <br/>
+    <div>@mod.Name</div>
+    <br />
+    <div>@mod.Description</div>
+    <br />
+    <div>Цена: @mod.Cost р.</div>
+    <br />    
+}

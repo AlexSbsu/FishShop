@@ -1,0 +1,186 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Files\textfile1.txt" />
+    <Content Remove="wwwroot\images\1-1.jpg" />
+    <Content Remove="wwwroot\images\1-3.jpg" />
+    <Content Remove="wwwroot\images\akantoftalmus-kyulya.jpg" />
+    <Content Remove="wwwroot\images\amfiprion-oranzhevyj.jpg" />
+    <Content Remove="wwwroot\images\Amphiprion percula.jpg" />
+    <Content Remove="wwwroot\images\Ancistrus.jpg" />
+    <Content Remove="wwwroot\images\apistogramma-ramirezi-1.jpg" />
+    <Content Remove="wwwroot\images\apistogramma-ramirezi.jpg" />
+    <Content Remove="wwwroot\images\astronotus-glazchatyj-1.jpg" />
+    <Content Remove="wwwroot\images\barbus-sumatranskij.jpg" />
+    <Content Remove="wwwroot\images\barbus-vishnevyj.jpg" />
+    <Content Remove="wwwroot\images\biryuzova-akara.jpg" />
+    <Content Remove="wwwroot\images\bociya-kloun-chromobotia-macracantha.jpg" />
+    <Content Remove="wwwroot\images\brilliantovaya-cihlazoma.jpg" />
+    <Content Remove="wwwroot\images\Centropyge multispinis.jpg" />
+    <Content Remove="wwwroot\images\cihlazoma-severum.jpg" />
+    <Content Remove="wwwroot\images\danio-rerio-1.jpg" />
+    <Content Remove="wwwroot\images\danio-rerio-rozovyj.jpg" />
+    <Content Remove="wwwroot\images\diskus-ravnopolosyj-symphysodon-aequifasciatus-vneshnij-vid.jpg" />
+    <Content Remove="wwwroot\images\goluboj-delfin.jpg" />
+    <Content Remove="wwwroot\images\guppi-ehndlera.jpg" />
+    <Content Remove="wwwroot\images\Guppi-vneshnij-vid.jpg" />
+    <Content Remove="wwwroot\images\hromis-krasavec.jpg" />
+    <Content Remove="wwwroot\images\koridoras-shterba.jpg" />
+    <Content Remove="wwwroot\images\krasnyj-neon.jpg" />
+    <Content Remove="wwwroot\images\labeo-dvuhcvetnyj.jpg" />
+    <Content Remove="wwwroot\images\mechenosec.jpg" />
+    <Content Remove="wwwroot\images\minor-ili-serpas.jpg" />
+    <Content Remove="wwwroot\images\mollineziya-chernaya.jpg" />
+    <Content Remove="wwwroot\images\mramornyj-gurami-obychno-ne-trevozhit-sosedej-po-akvariumu.jpg" />
+    <Content Remove="wwwroot\images\odna-iz-cvetovyh-variacij-raduzhnicy-biryuzovoj.jpg" />
+    <Content Remove="wwwroot\images\Paracheilinus filamentosus.jpg" />
+    <Content Remove="wwwroot\images\pelvikahromis-pulher.jpg" />
+    <Content Remove="wwwroot\images\psevdotrofeusy-populyarnye-akvariumnye-obitateli.jpg" />
+    <Content Remove="wwwroot\images\pterigopliht-parchovyj.jpg" />
+    <Content Remove="wwwroot\images\ryba-popugaj.jpg" />
+    <Content Remove="wwwroot\images\samec-i-samka-zhemchuzhnogo-gurami.jpg" />
+    <Content Remove="wwwroot\images\samec-lyaliusa.jpg" />
+    <Content Remove="wwwroot\images\samec-makropoda.jpg" />
+    <Content Remove="wwwroot\images\samec-pecilii.jpg" />
+    <Content Remove="wwwroot\images\samka-gurami-zhemchuzhnogo.jpg" />
+    <Content Remove="wwwroot\images\shutterstock_1087728884.jpg" />
+    <Content Remove="wwwroot\images\shutterstock_787530391.jpg" />
+    <Content Remove="wwwroot\images\siamskij-petushok-betta-splendens.jpg" />
+    <Content Remove="wwwroot\images\siamskij-vodorosleed-sae.jpg" />
+    <Content Remove="wwwroot\images\skalyariya-belaya.jpg" />
+    <Content Remove="wwwroot\images\som-torakatum.jpg" />
+    <Content Remove="wwwroot\images\somik-sinodontis.jpg" />
+    <Content Remove="wwwroot\images\sumatranskij-barbus.jpg" />
+    <Content Remove="wwwroot\images\Synchiropus splendidus.jpg" />
+    <Content Remove="wwwroot\images\terneciya-glofish.jpg" />
+    <Content Remove="wwwroot\images\terneciya-ili-chernaya-tetra.jpg" />
+    <Content Remove="wwwroot\images\tetra-amandy-1.jpg" />
+    <Content Remove="wwwroot\images\tetraodon.jpg" />
+    <Content Remove="wwwroot\images\tetry-fon-rio-v-akvariume.jpg" />
+    <Content Remove="wwwroot\images\Yellow Tang рыба.jpg" />
+    <Content Remove="wwwroot\images\zolotaya-rybka-kometa.jpg" />
+    <Content Remove="wwwroot\images\zolotaya-rybka-teleskop.jpg" />
+    <Content Remove="wwwroot\images\zolotaya-rybka-vualekhvost.jpg" />
+    <Content Remove="wwwroot\images\Аквариумная рыбка Мандаринка.jpg" />
+    <Content Remove="wwwroot\images\Бабочка ВЫМПЕЛЬНАЯ белоперая.jpg" />
+    <Content Remove="wwwroot\images\Гуппи .jpg" />
+    <Content Remove="wwwroot\images\Длиннорылая рыба бабочка.jpg" />
+    <Content Remove="wwwroot\images\Красивые рыбки для аквариума.jpg" />
+    <Content Remove="wwwroot\images\Морская рыбка спинорог.jpg" />
+    <Content Remove="wwwroot\images\Морские рыбки.jpg" />
+    <Content Remove="wwwroot\images\Морские рыбки2.jpg" />
+    <Content Remove="wwwroot\images\Полосатики рыбки аквариумные.jpg" />
+    <Content Remove="wwwroot\images\Пятнистая рыба.jpg" />
+    <Content Remove="wwwroot\images\Рыба Еллоу танг.jpg" />
+    <Content Remove="wwwroot\images\Рыба Кардинал морская.jpg" />
+    <Content Remove="wwwroot\images\Рыба клоун и актиния.jpg" />
+    <Content Remove="wwwroot\images\Скалярия.jpg" />
+    <Content Remove="wwwroot\images\Центропиг Королевский.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="old_Data_Base.cs1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\NameAgeForm\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Files\textfile1.txt" />
+    <None Include="wwwroot\images\1-1.jpg" />
+    <None Include="wwwroot\images\1-3.jpg" />
+    <None Include="wwwroot\images\akantoftalmus-kyulya.jpg" />
+    <None Include="wwwroot\images\amfiprion-oranzhevyj.jpg" />
+    <None Include="wwwroot\images\Amphiprion percula.jpg" />
+    <None Include="wwwroot\images\Ancistrus.jpg" />
+    <None Include="wwwroot\images\apistogramma-ramirezi-1.jpg" />
+    <None Include="wwwroot\images\apistogramma-ramirezi.jpg" />
+    <None Include="wwwroot\images\astronotus-glazchatyj-1.jpg" />
+    <None Include="wwwroot\images\barbus-sumatranskij.jpg" />
+    <None Include="wwwroot\images\barbus-vishnevyj.jpg" />
+    <None Include="wwwroot\images\biryuzova-akara.jpg" />
+    <None Include="wwwroot\images\bociya-kloun-chromobotia-macracantha.jpg" />
+    <None Include="wwwroot\images\brilliantovaya-cihlazoma.jpg" />
+    <None Include="wwwroot\images\Centropyge multispinis.jpg" />
+    <None Include="wwwroot\images\cihlazoma-severum.jpg" />
+    <None Include="wwwroot\images\danio-rerio-1.jpg" />
+    <None Include="wwwroot\images\danio-rerio-rozovyj.jpg" />
+    <None Include="wwwroot\images\diskus-ravnopolosyj-symphysodon-aequifasciatus-vneshnij-vid.jpg" />
+    <None Include="wwwroot\images\goluboj-delfin.jpg" />
+    <None Include="wwwroot\images\guppi-ehndlera.jpg" />
+    <None Include="wwwroot\images\Guppi-vneshnij-vid.jpg" />
+    <None Include="wwwroot\images\hromis-krasavec.jpg" />
+    <None Include="wwwroot\images\koridoras-shterba.jpg" />
+    <None Include="wwwroot\images\krasnyj-neon.jpg" />
+    <None Include="wwwroot\images\labeo-dvuhcvetnyj.jpg" />
+    <None Include="wwwroot\images\mechenosec.jpg" />
+    <None Include="wwwroot\images\minor-ili-serpas.jpg" />
+    <None Include="wwwroot\images\mollineziya-chernaya.jpg" />
+    <None Include="wwwroot\images\mramornyj-gurami-obychno-ne-trevozhit-sosedej-po-akvariumu.jpg" />
+    <None Include="wwwroot\images\odna-iz-cvetovyh-variacij-raduzhnicy-biryuzovoj.jpg" />
+    <None Include="wwwroot\images\Paracheilinus filamentosus.jpg" />
+    <None Include="wwwroot\images\pelvikahromis-pulher.jpg" />
+    <None Include="wwwroot\images\psevdotrofeusy-populyarnye-akvariumnye-obitateli.jpg" />
+    <None Include="wwwroot\images\pterigopliht-parchovyj.jpg" />
+    <None Include="wwwroot\images\ryba-popugaj.jpg" />
+    <None Include="wwwroot\images\samec-i-samka-zhemchuzhnogo-gurami.jpg" />
+    <None Include="wwwroot\images\samec-lyaliusa.jpg" />
+    <None Include="wwwroot\images\samec-makropoda.jpg" />
+    <None Include="wwwroot\images\samec-pecilii.jpg" />
+    <None Include="wwwroot\images\samka-gurami-zhemchuzhnogo.jpg" />
+    <None Include="wwwroot\images\shutterstock_1087728884.jpg" />
+    <None Include="wwwroot\images\shutterstock_787530391.jpg" />
+    <None Include="wwwroot\images\siamskij-petushok-betta-splendens.jpg" />
+    <None Include="wwwroot\images\siamskij-vodorosleed-sae.jpg" />
+    <None Include="wwwroot\images\skalyariya-belaya.jpg" />
+    <None Include="wwwroot\images\som-torakatum.jpg" />
+    <None Include="wwwroot\images\somik-sinodontis.jpg" />
+    <None Include="wwwroot\images\sumatranskij-barbus.jpg" />
+    <None Include="wwwroot\images\Synchiropus splendidus.jpg" />
+    <None Include="wwwroot\images\terneciya-glofish.jpg" />
+    <None Include="wwwroot\images\terneciya-ili-chernaya-tetra.jpg" />
+    <None Include="wwwroot\images\tetra-amandy-1.jpg" />
+    <None Include="wwwroot\images\tetraodon.jpg" />
+    <None Include="wwwroot\images\tetry-fon-rio-v-akvariume.jpg" />
+    <None Include="wwwroot\images\Yellow Tang рыба.jpg" />
+    <None Include="wwwroot\images\zolotaya-rybka-kometa.jpg" />
+    <None Include="wwwroot\images\zolotaya-rybka-teleskop.jpg" />
+    <None Include="wwwroot\images\zolotaya-rybka-vualekhvost.jpg" />
+    <None Include="wwwroot\images\Аквариумная рыбка Мандаринка.jpg" />
+    <None Include="wwwroot\images\Бабочка ВЫМПЕЛЬНАЯ белоперая.jpg" />
+    <None Include="wwwroot\images\Гуппи .jpg" />
+    <None Include="wwwroot\images\Длиннорылая рыба бабочка.jpg" />
+    <None Include="wwwroot\images\Красивые рыбки для аквариума.jpg" />
+    <None Include="wwwroot\images\Морская рыбка спинорог.jpg" />
+    <None Include="wwwroot\images\Морские рыбки.jpg" />
+    <None Include="wwwroot\images\Морские рыбки2.jpg" />
+    <None Include="wwwroot\images\Полосатики рыбки аквариумные.jpg" />
+    <None Include="wwwroot\images\Пятнистая рыба.jpg" />
+    <None Include="wwwroot\images\Рыба Еллоу танг.jpg" />
+    <None Include="wwwroot\images\Рыба Кардинал морская.jpg" />
+    <None Include="wwwroot\images\Рыба клоун и актиния.jpg" />
+    <None Include="wwwroot\images\Скалярия.jpg" />
+    <None Include="wwwroot\images\Центропиг Королевский.jpg" />
+  </ItemGroup>
+
+</Project>
