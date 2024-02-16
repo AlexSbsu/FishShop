@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Fish_Shop.Data;
+namespace Fish_Shop;
 
 public class Fish_ShopContext : IdentityDbContext<IdentityUser>
 {
@@ -16,7 +16,7 @@ public class Fish_ShopContext : IdentityDbContext<IdentityUser>
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=comp\\LOCALSQLSERVER;Database=Fish_Shop_DB1;Trusted_Connection=True;TrustServerCertificate=True;"); //1st
+        optionsBuilder.UseSqlServer("Server=comp\\LOCALSQLSERVER;Database=Fish_Shop_DB;Trusted_Connection=True;TrustServerCertificate=True;"); //1st
 
         //optionsBuilder.UseSqlite("Data Source=helloapp.db");     //2nd if no service connected
 
@@ -26,9 +26,6 @@ public class Fish_ShopContext : IdentityDbContext<IdentityUser>
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
-        base.OnModelCreating(builder);
-        // Customize the ASP.NET Identity model and override the defaults if needed.
-        // For example, you can rename the ASP.NET Identity table names and more.
-        // Add your customizations after calling base.OnModelCreating(builder);
+        base.OnModelCreating(builder);        
     }
 }

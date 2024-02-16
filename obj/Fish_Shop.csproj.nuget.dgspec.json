@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#_Project\\Fish_Shop_work\\Fish_Shop.csproj": {}
+    "D:\\Git_reps\\Fish_Shop\\Fish_Shop.csproj": {}
   },
   "projects": {
-    "D:\\C#_Project\\Fish_Shop_work\\Fish_Shop.csproj": {
+    "D:\\Git_reps\\Fish_Shop\\Fish_Shop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#_Project\\Fish_Shop_work\\Fish_Shop.csproj",
+        "projectUniqueName": "D:\\Git_reps\\Fish_Shop\\Fish_Shop.csproj",
         "projectName": "Fish_Shop",
-        "projectPath": "D:\\C#_Project\\Fish_Shop_work\\Fish_Shop.csproj",
+        "projectPath": "D:\\Git_reps\\Fish_Shop\\Fish_Shop.csproj",
         "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "D:\\C#_Project\\Fish_Shop_work\\obj\\",
+        "outputPath": "D:\\Git_reps\\Fish_Shop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,29 +51,33 @@
             },
             "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             }
           },
           "imports": [

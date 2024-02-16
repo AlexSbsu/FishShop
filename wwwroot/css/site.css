@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -14,9 +15,29 @@ html {
 
 html {
   position: relative;
-  min-height: 100%;
+  min-height: 100%;  
 }
 
 body {
   margin-bottom: 60px;
+  max-width: 1500px;
+  height: 100%;
+  background-image:url('../images/fon_2880x1800.jpg1');
+  background-attachment: fixed;
+}
+footer {
+    
+}
+
+.bg {
+  /* The image used */
+  background-image: url("img.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

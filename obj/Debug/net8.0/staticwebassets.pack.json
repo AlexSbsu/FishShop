@@ -1,707 +1,511 @@
 {
   "Files": [
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Fish_Shop.bundle.scp.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Fish_Shop.bundle.scp.css",
       "PackagePath": "staticwebassets\\Fish_Shop.bundle.scp.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\css\\site.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\favicon.ico",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_Ancistrus.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_Ancistrus.jpg"
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\fon_2880x1800.jpg",
+      "PackagePath": "staticwebassets\\images\\fon_2880x1800.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_Guppi-vneshnij-vid.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_Guppi-vneshnij-vid.jpg"
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\fon_6101x4072.jpeg",
+      "PackagePath": "staticwebassets\\images\\fon_6101x4072.jpeg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_akantoftalmus-kyulya.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_akantoftalmus-kyulya.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_amfiprion-oranzhevyj.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_amfiprion-oranzhevyj.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_apistogramma-ramirezi-1.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_apistogramma-ramirezi-1.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_apistogramma-ramirezi.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_apistogramma-ramirezi.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_astronotus-glazchatyj.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_astronotus-glazchatyj.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_barbus-sumatranskij.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_barbus-sumatranskij.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_barbus-vishnevyj.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_barbus-vishnevyj.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_biryuzova-akara.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_biryuzova-akara.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_bociya-kloun-chromobotia-macracantha.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_bociya-kloun-chromobotia-macracantha.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_brilliantovaya-cihlazoma.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_brilliantovaya-cihlazoma.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_cihlazoma-severum.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_cihlazoma-severum.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_danio-rerio-1.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_danio-rerio-1.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_danio-rerio-rozovyj.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_danio-rerio-rozovyj.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_diskus-ravnopolosyj-symphysodon-aequifasciatus.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_diskus-ravnopolosyj-symphysodon-aequifasciatus.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_goluboj-delfin.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_goluboj-delfin.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_guppi-ehndlera.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_guppi-ehndlera.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_hromis-krasavec.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_hromis-krasavec.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_koridoras-shterba.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_koridoras-shterba.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_krasnyj-neon.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_krasnyj-neon.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_labeo-dvuhcvetnyj.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_labeo-dvuhcvetnyj.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_mechenosec.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_mechenosec.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_minor-ili-serpas.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_minor-ili-serpas.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_mollineziya-chernaya.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_mollineziya-chernaya.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_mramornyj-gurami.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_mramornyj-gurami.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_pelvikahromis-pulher.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_pelvikahromis-pulher.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_psevdotrofeusy.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_psevdotrofeusy.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_pterigopliht-parchovyj.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_pterigopliht-parchovyj.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_raduzhnicy-biryuzovoj.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_raduzhnicy-biryuzovoj.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_samec-i-samka-zhemchuzhnogo-gurami.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_samec-i-samka-zhemchuzhnogo-gurami.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_samec-lyaliusa.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_samec-lyaliusa.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_samec-makropoda.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_samec-makropoda.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_samec-pecilii.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_samec-pecilii.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_samka-gurami-zhemchuzhnogo.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_samka-gurami-zhemchuzhnogo.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_shutterstock.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_shutterstock.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_siamskij-petushok.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_siamskij-petushok.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_siamskij-vodorosleed-sae.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_siamskij-vodorosleed-sae.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_skalyariya-belaya.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_skalyariya-belaya.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_som-torakatum.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_som-torakatum.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_somik-sinodontis.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_somik-sinodontis.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_sumatranskij-barbus.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_sumatranskij-barbus.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_terneciya-glofish.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_terneciya-glofish.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_terneciya-ili-chernaya-tetra.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_terneciya-ili-chernaya-tetra.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_tetra-amandy.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_tetra-amandy.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_tetraodon.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_tetraodon.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_tetry-fon-rio.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_tetry-fon-rio.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_zolotaya-rybka-kometa.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_zolotaya-rybka-kometa.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_zolotaya-rybka-teleskop.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_zolotaya-rybka-teleskop.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_zolotaya-rybka-vualekhvost.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_zolotaya-rybka-vualekhvost.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\740x490_Гуппи.jpg",
-      "PackagePath": "staticwebassets\\images\\740x490_Гуппи.jpg"
-    },
-    {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\ryba_Акара красногрудая.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\ryba_Акара красногрудая.jpg",
       "PackagePath": "staticwebassets\\images\\ryba_Акара красногрудая.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\ryba_Апистограмма виджета.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\ryba_Апистограмма виджета.jpg",
       "PackagePath": "staticwebassets\\images\\ryba_Апистограмма виджета.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\ryba_Боция дарио.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\ryba_Боция дарио.jpg",
       "PackagePath": "staticwebassets\\images\\ryba_Боция дарио.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\ryba_Данио.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\ryba_Данио.jpg",
       "PackagePath": "staticwebassets\\images\\ryba_Данио.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\ryba_Лампрологус пятиполосый.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\ryba_Лампрологус пятиполосый.jpg",
       "PackagePath": "staticwebassets\\images\\ryba_Лампрологус пятиполосый.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\ryba_Лампрологус симилис.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\ryba_Лампрологус симилис.jpg",
       "PackagePath": "staticwebassets\\images\\ryba_Лампрологус симилис.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\ryba_Меченосец.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\ryba_Меченосец.jpg",
       "PackagePath": "staticwebassets\\images\\ryba_Меченосец.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\ryba_Парациприхромис нигрипиннис.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\ryba_Парациприхромис нигрипиннис.jpg",
       "PackagePath": "staticwebassets\\images\\ryba_Парациприхромис нигрипиннис.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\ryba_Рыба попугай.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\ryba_Рыба попугай.jpg",
       "PackagePath": "staticwebassets\\images\\ryba_Рыба попугай.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\ryba_Хомалоптера.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\ryba_Хомалоптера.jpg",
       "PackagePath": "staticwebassets\\images\\ryba_Хомалоптера.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\trava_Азолла каролинская.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Азолла каролинская.jpg",
       "PackagePath": "staticwebassets\\images\\trava_Азолла каролинская.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\trava_Альтернантера Беттцика.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Альтернантера Беттцика.jpg",
       "PackagePath": "staticwebassets\\images\\trava_Альтернантера Беттцика.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\trava_Альтернантера сидячая.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Альтернантера сидячая.jpg",
       "PackagePath": "staticwebassets\\images\\trava_Альтернантера сидячая.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\trava_Банан водный.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Банан водный.jpg",
       "PackagePath": "staticwebassets\\images\\trava_Банан водный.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\trava_Вербейник монетчатый.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Вербейник монетчатый.jpg",
       "PackagePath": "staticwebassets\\images\\trava_Вербейник монетчатый.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\trava_Гетерантера остролистная.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Гетерантера остролистная.jpg",
       "PackagePath": "staticwebassets\\images\\trava_Гетерантера остролистная.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\trava_Плачущий мох.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Плачущий мох.jpg",
       "PackagePath": "staticwebassets\\images\\trava_Плачущий мох.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\trava_Утрикулярия  граминифолия.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Утрикулярия  граминифолия.jpg",
       "PackagePath": "staticwebassets\\images\\trava_Утрикулярия  граминифолия.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\trava_Элодея зубчатая.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Элодея зубчатая.jpg",
       "PackagePath": "staticwebassets\\images\\trava_Элодея зубчатая.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\images\\trava_Эхинодорус нежный.jpg",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Эхинодорус нежный.jpg",
       "PackagePath": "staticwebassets\\images\\trava_Эхинодорус нежный.jpg"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\js\\site.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap-5.3.2-dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\C#_Project\\Fish_Shop_work\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
