@@ -41,3 +41,18 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.basketAddRemove {
+    width: 110px;
+}
+
+.basketFill {
+}
+
+.basketEmpty {
+    pointer-events: none;
+}
+
+
+.body_common {
+    margin-top: 60px;
+}

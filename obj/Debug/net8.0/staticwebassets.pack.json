@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\basket-fill.svg",
+      "PackagePath": "staticwebassets\\images\\basket-fill.svg"
+    },
+    {
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\basket.svg",
+      "PackagePath": "staticwebassets\\images\\basket.svg"
+    },
+    {
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\cart-check.svg",
+      "PackagePath": "staticwebassets\\images\\cart-check.svg"
+    },
+    {
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\cart.svg",
+      "PackagePath": "staticwebassets\\images\\cart.svg"
+    },
+    {
       "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\fon_2880x1800.jpg",
       "PackagePath": "staticwebassets\\images\\fon_2880x1800.jpg"
     },
@@ -59,6 +75,10 @@
     {
       "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\ryba_Хомалоптера.jpg",
       "PackagePath": "staticwebassets\\images\\ryba_Хомалоптера.jpg"
+    },
+    {
+      "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\shopping-cart.png",
+      "PackagePath": "staticwebassets\\images\\shopping-cart.png"
     },
     {
       "Id": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Азолла каролинская.jpg",

@@ -15,33 +15,133 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
-    <style>
-        a:hover { background-color: yellow; }
+    <style>        
     </style>
+    <script>
+
+        let prodsTobuy = [];
+        let prodsTobuyString = "";
+        let prodsTobuyRequestString = "";
+
+        function prodsTobuyPrint() {
+            console.log('--->>>prodsTobuyPrint : ');            
+            if (prodsTobuy.length == 0) console.log('...prodsTobuy Empty...')
+            else prodsTobuy.forEach((number) => console.log(number));
+            console.log('prodsTobuyString = ' + prodsTobuy.toString());
+            console.log('prodsTobuyRequestString = ' + prodsTobuyRequestString.toString());
+        };
+        function prodsTobuyRequestStringBuild() { 
+            prodsTobuyRequestString = "";
+            for (let i = 0; i < prodsTobuy.length; i++) { 
+                prodsTobuyRequestString += "basketprodlist[" + i + "]=" + prodsTobuy[i] + "&";                
+            } 
+        }
+
+        function basketUpdate() {                
+            basket_counter.innerHTML = prodsTobuy.length;
+            if (prodsTobuy.length == 0) {
+                basket.classList.add('basketEmpty');
+                //basket.setAttribute("asp-route-basketprodlist", prodsTobuyString);                
+                basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);
+                //$('#basket').attr(asp-route-basketProdList,222);
+                //prodsTobuySaveToCookie();
+                //textinput_basketProdList.setAttribute('value', prodsTobuyString);
+                //document.getElementById('basketProdList').value = prodsTobuyString;
+            }
+            else {
+                basket.classList.remove('basketEmpty');
+                //basket.setAttribute("asp-route-basketprodlist", prodsTobuyString);
+                basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);
+                //$('#basket').attr(asp - route - basketProdList, 222);
+                //prodsTobuySaveToCookie();
+                //textinput_basketProdList.setAttribute('value', prodsTobuyString);
+                //document.getElementById('basketProdList').value = prodsTobuyString;
+            }            
+            //let text = basket.getAttribute("asp-route-basketProdList");
+            //console.log(" Attribute asp-route-basketProdList = " + text);
+        }
+
+        function handleClick() {
+            document.addEventListener('click', function (event) {
+                console.log('user clicked: ', event.target);
+                var btn = event.target;
+                if (btn.innerHTML.trim() == 'Add to cart' && btn.classList.contains("basketAddRemove")) {
+                    btn.innerHTML = 'Added';
+                    btn.classList.add('btn-danger');
+                    btn.classList.remove('btn-success');                    
+
+                    prodsTobuy.push(btn.id);                                //update Prods array
+                    prodsTobuyString = prodsTobuy.toString();             //update Prods string
+                    prodsTobuyRequestStringBuild()
+                    basketUpdate();
+                    prodsTobuyPrint();                    
+                }
+                else {
+                    if (btn.classList.contains("basketAddRemove")) {
+                        btn.innerHTML = 'Add to cart';
+                        btn.classList.add('btn-success');
+                        btn.classList.remove('btn-danger');                                   
+
+                        prodsTobuy.splice(prodsTobuy.indexOf(btn.id), 1);   //update Prods array
+                        prodsTobuyString = prodsTobuy.toString();            //update Prods string
+                        prodsTobuyRequestStringBuild()
+                        basketUpdate();
+                        prodsTobuyPrint();                        
+                    }
+                }
+            });
+        }
+        handleClick();
+        
+        function prodsTobuySaveToCookie() {
+            var prodsTobuycookieVal = JSON.stringify(prodsTobuy);
+            document.cookie = "prodsTobuycookie=" + prodsTobuycookieVal;
+            //.getCookie('prodsTobuycookie')
+            console.log('Cookies prodsTobuycookie saved : ' + document.cookie);
+        }
+
+        function prodsTobuySendString() {
+            prodsTobuyString = prodsTobuy.toString();
+            console.log('from prodsTobuySendString() prodsTobuyString = ' + prodsTobuyString);
+
+            $.ajax({
+                type: "POST",
+                url: "/Basket/index",
+                traditional: true,
+                cache: false,
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify({ prodsTobuyString })
+                //success: function (data) {Result}
+            });                
+        }
+
+    </script>
 </head>
 
 <body class="container-fluid">
     
     <!-----------------------HEADER-MY------------->    
   
-    <!---------NAVIGATION-MY-->    
+    <!---------NAVIGATION START--------->
     <div class="row" style="margin-bottom:50px">
         <nav class="navbar navbar-expand-lg fixed-top border-bottom navbar-toggleable-sm navbar-light bg-white box-shadow col-12">
             <div class="container-fluid">
                 
                 <a class="nav-link active navbar-brand" aria-current="page" asp-controller="Home" asp-action="index"> Главная </a>
-                                    
+                                
                 <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-------------START Collapsed Menu------------->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="navbar-nav" style="display: flex; justify-content: space-between; align-items: center;">
                         <a class="nav-link" href="feedback.html" style="display:none"> История заказов </a>
                         <a class="nav-link" href="feedback.html" style="display:none"> Обратная связь  </a>
                         <a class="nav-link" aria-current="page" asp-controller="Home" asp-action="about"> О нас </a>
-                        <!-------------Dropdown-MY------------->
+                        <!-------------Dropdown------------->
                         <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Разное</a>
                             <ul class="dropdown-menu" role="menu">
@@ -64,12 +164,24 @@
                        
                     </div>
                 </div>
-                        
+                <!-------------Collapsed Menu END------------->                
                 
+                <!-------------Basket START------------------->
 
+                <!--asp-controller="Basket" asp-action="Index" asp-route-basketProdList="222" onclick="prodsTobuySendString()"-->
+                
+                
+                <input type="text" id="textinput_basketProdList" name="textinput_basketProdList" hidden/>
+                    <a id="basket" class="btn btn-outline-secondary basketEmpty">
+                        <img src="/images/shopping-cart.png" width="16" height="16" /> <span id="basket_counter">0</span>
+                </a>
+                
+              
+                <!-------------Basket END--------------------->
             </div>
         </nav>
     </div>
+    <!---------NAVIGATION END--------->
 
     <div class="row" style="margin-bottom:50px">
         <aside class="col-lg-2 col-md-2 col-sm-12" style="margin-top:50px">
@@ -83,11 +195,11 @@
             </div>
         </aside>
 
-<!-----------------------MAIN-MY------------->
+<!-----------------------MAIN START------------->
+
+            @RenderBody()
         
-      @RenderBody()
-        
-<!-----------------------MAIN-MY------------->
+<!-----------------------MAIN END------------->
     </div>
         <br />
 <!-----------------------FOOTER------------->
@@ -99,5 +211,8 @@
     </footer>
 <!-----------------------FOOTER------------->
 
+<script>
+        
+</script>
 </body>
 </html>

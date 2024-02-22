@@ -5,12 +5,12 @@
     <div>
         <h2 style="text-align: center;">Рыбёшечки</h2>
     </div>
-    <div class="dropdown">
+    <div class="dropdown" style="margin-bottom:30px">
         <button class="btn btn-secondary btn-lg dropdown-toggle bg-white box-shadow" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black">
             Сортировать :
         </button>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" asp-action="Index" asp-route-sortOrder="nameasc" selected="selected">  Имя: По возрастанию  </a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-sortOrder="nameasc" selected>  Имя: По возрастанию  </a></li>
             <li><a class="dropdown-item" asp-action="Index" asp-route-sortOrder="namedesc">                     Имя: По убыванию     </a></li>
             <li><a class="dropdown-item" asp-action="Index" asp-route-sortOrder="costasc">                      Цена: По возрастанию </a></li>
             <li><a class="dropdown-item" asp-action="Index" asp-route-sortOrder="costdesc">                     Цена: По убыванию    </a></li>
@@ -18,7 +18,7 @@
     </div>
         
 
-    <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="row row-cols-1 row-cols-md-2 g-4">        
         @foreach(var mod in Model)
         {
             <div class="col" >
@@ -27,75 +27,14 @@
                     <div class="card-body">
                         <h5 class="card-title">@mod.Name</h5>
                         <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-height:100px;">@mod.ShortDescription</p>
-                        <div class="center"> 
-                            <div class="buttons d-flex flex-row"> 
-                                <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button px-5"><span class="dot"></span>Add to cart </button> </div> </div>
+                        <div class="center">
+                            <button class="btn btn-success basketAddRemove" id="@mod.Id">Add to cart</button>
+                        </div>                        
                         <p style="text-align: right;">Цена: @mod.Cost р.</p>
                     </div>
                 </div>
-            </div>
+            </div>            
         }       
 
     </div>
 </main>
-
-
-<!--
-    text single-line
-     style="overflow: hidden; text-overflow: ellipsis;"
-    text-truncate
-style="display: inline-block; vertical-align: top; margin: 10px 5px;"
-
-
-<main class="col-lg-10 col-md-10 col-sm-12" style="max-width:10000px">
-    <div>
-        <h2 style="text-align: center;">Рыбёшечки</h2>
-    </div>
-
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-            <div class="card">
-                <img src="images/Боция дарио.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Боция дарио</h5>
-                    <p class="card-text">Пресноводная лучепёрая рыбка из семейства Боциевые</p>
-                    <p style="text-align: right;">Цена: 300р</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card">
-                <img src="images/Апистограмма виджета.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Апистограмма виджета.jpg</h5>
-                    <p class="card-text">Пресноводная лучепёрая рыбка из семейства Цихловые</p>
-                    <p style="text-align: right;">Цена: 30р</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card">
-                <img src="images/740x490_Ancistrus.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Item3</h5>
-                    <p class="card-text">Сочная и питательная</p>
-                    <p style="text-align: right;">Цена: 3р/кг</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card">
-                <img src="images/740x490_apistogramma-ramirezi.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Item5</h5>
-                    <p class="card-text">Описание</p>
-                    <p style="text-align: right;">Цена: 1000р</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
--->
