@@ -36,7 +36,7 @@ namespace Fish_Shop
                     sortProducts.costdesc => db.Products.OrderByDescending(p => p.Cost)
             };
                 
-            return View("main", await products.ToListAsync()); //Redirect("ReturnView");    //<-------- REDIRECT frim default Index to Main                        
+            return View("Home_View", await products.ToListAsync());
         }
 
         public IActionResult About()

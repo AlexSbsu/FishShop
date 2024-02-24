@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Корзина";
+    Layout = "Layout_noLeftSide";
+}
+
+@model IEnumerable<Product>
+
+<div style="margin-top: 60px;">
+</div>
+@{
+    decimal totalcost=0;
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var mod in Model)
+{
+    <div class="row g-4">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="card" style="max-width:300px;">
+                <img src="../images/@mod.ImageFile" class="card-img-top" alt="...">                
+            </div>
+        </div>
+
+        <!--Description  style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-height:100px;"-->
+        <div class="col-lg-7 col-md-7 col-sm-7">
+            <p> <b> @mod.Name </b> </p> <br />
+            <p>@mod.ShortDescription</p>
+        </div>
+
+        <!--Product Total Cost  row-cols-2 row-cols-lg-2-->
+        <div class="col-lg-2 col-md-2 col-sm-1">
+            <p style="text-align: right;"> <b> Цена: </b> <br/> @mod.Cost р.</p>
+        </div>
+        @{ totalcost += mod.Cost; }
+    </div>
+}
+<div class="row g-4">
+    <div class="col-lg-10 col-md-10 col-sm-10">        
+    </div>    
+    <div class="col-lg-2 col-md-2 col-sm-2" style="text-align: right;">
+        <!--Total COST-->
+        <p style="text-align: right;"> <h4>Полная стоимость: <br /> @totalcost р. </h4></p>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xm-3">
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xm-3" style="text-align: right;">
+        <button class="btn btn-success btn-lg">Сделать заказ</button>
+    </div>
+</div>

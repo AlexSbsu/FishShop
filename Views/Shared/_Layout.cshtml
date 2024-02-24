@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    @*<title>Horse_shop_Bootstrap</title>*@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
     <title>@ViewData["Title"] - Rybka</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap-5.3.2-dist/css/bootstrap.min.css" />
@@ -15,8 +14,10 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
+
     <style>        
     </style>
+    
     <script>
 
         let prodsTobuy = [];
@@ -30,43 +31,41 @@
             console.log('prodsTobuyString = ' + prodsTobuy.toString());
             console.log('prodsTobuyRequestString = ' + prodsTobuyRequestString.toString());
         };
+
         function prodsTobuyRequestStringBuild() { 
             prodsTobuyRequestString = "";
             for (let i = 0; i < prodsTobuy.length; i++) { 
                 prodsTobuyRequestString += "basketprodlist[" + i + "]=" + prodsTobuy[i] + "&";                
-            } 
+            }
+            prodsTobuyRequestString = prodsTobuyRequestString.slice(0, prodsTobuyRequestString.length - 1);
         }
 
         function basketUpdate() {                
             basket_counter.innerHTML = prodsTobuy.length;
             if (prodsTobuy.length == 0) {
-                basket.classList.add('basketEmpty');
-                //basket.setAttribute("asp-route-basketprodlist", prodsTobuyString);                
-                basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);
-                //$('#basket').attr(asp-route-basketProdList,222);
-                //prodsTobuySaveToCookie();
-                //textinput_basketProdList.setAttribute('value', prodsTobuyString);
-                //document.getElementById('basketProdList').value = prodsTobuyString;
+                basket.classList.add('basketEmpty');                
+                basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);                
+                prodsTobuySaveToCookie();
+                //basket.setAttribute("asp-route-basketprodlist", prodsTobuyString); //not working
+                //textinput_basketProdList.setAttribute('value', prodsTobuyString);  //not working via form
+                //document.getElementById('basketProdList').value = prodsTobuyString;//not working via form
             }
             else {
-                basket.classList.remove('basketEmpty');
-                //basket.setAttribute("asp-route-basketprodlist", prodsTobuyString);
-                basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);
-                //$('#basket').attr(asp - route - basketProdList, 222);
-                //prodsTobuySaveToCookie();
-                //textinput_basketProdList.setAttribute('value', prodsTobuyString);
-                //document.getElementById('basketProdList').value = prodsTobuyString;
-            }            
-            //let text = basket.getAttribute("asp-route-basketProdList");
-            //console.log(" Attribute asp-route-basketProdList = " + text);
+                basket.classList.remove('basketEmpty');                
+                basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);                
+                prodsTobuySaveToCookie();
+                //basket.setAttribute("asp-route-basketprodlist", prodsTobuyString); //not working
+                //textinput_basketProdList.setAttribute('value', prodsTobuyString);  //not working via form
+                //document.getElementById('basketProdList').value = prodsTobuyString;//not working via form
+            }                        
         }
 
         function handleClick() {
             document.addEventListener('click', function (event) {
                 console.log('user clicked: ', event.target);
                 var btn = event.target;
-                if (btn.innerHTML.trim() == 'Add to cart' && btn.classList.contains("basketAddRemove")) {
-                    btn.innerHTML = 'Added';
+                if (btn.innerHTML.trim() == 'В корзину' && btn.classList.contains("basketAddRemove")) {
+                    btn.innerHTML = 'В корзине';
                     btn.classList.add('btn-danger');
                     btn.classList.remove('btn-success');                    
 
@@ -78,7 +77,7 @@
                 }
                 else {
                     if (btn.classList.contains("basketAddRemove")) {
-                        btn.innerHTML = 'Add to cart';
+                        btn.innerHTML = 'В корзину';
                         btn.classList.add('btn-success');
                         btn.classList.remove('btn-danger');                                   
 
@@ -111,7 +110,7 @@
                 cache: false,
                 dataType: "json",
                 contentType: 'application/json; charset=utf-8',
-                data: JSON.stringify({ prodsTobuyString })
+                data: JSON.stringify({ prodsTobuy })
                 //success: function (data) {Result}
             });                
         }
@@ -120,6 +119,7 @@
 </head>
 
 <body class="container-fluid">
+
     
     <!-----------------------HEADER-MY------------->    
   
