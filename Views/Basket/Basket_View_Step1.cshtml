@@ -3,6 +3,156 @@
     Layout = "Layout_noLeftSide";
 }
 
+<script type="text/javascript">
+        let Totalcost=0;        
+
+        document.addEventListener('click', handleClick );
+        //document.addEventListener('click', test1);
+
+        function handleClick(event) {
+            console.log('user clicked: ', event.target);
+            var btn = event.target;
+
+            if (btn.id == 'test1') CreateOrder();
+            if (btn.id == 'test2') test2();
+
+            if (btn.id == 'button_make_order') Complete_order();
+
+            if (btn.classList.contains("btn-minus") || btn.classList.contains("btn-plus")) Change_amount(btn);
+        }
+
+        console.log('<<-------------------POINT0');
+
+        function Change_amount(btn) { 
+            let grp_id = btn.id.slice(0, -6);
+            console.log('grp_id =' + grp_id);
+            let input_amount_id = grp_id + "+_amount";
+            console.log('input_amount_id =' + input_amount_id);
+
+            if (btn.classList.contains("btn-minus")) {
+                console.log('click in minus...');                            
+                let amount = document.getElementById(input_amount_id).getAttribute('value');                
+                console.log('amount = ' + amount);
+                if (amount > 0) {
+                    amount--;                    
+                    document.getElementById(input_amount_id).setAttribute('value', amount);
+                }
+            }
+            if (btn.classList.contains("btn-plus")) {
+            let amount = document.getElementById(input_amount_id).getAttribute('value');
+                console.log('click in plus...');
+                console.log('amount = ' + amount);
+                if (amount < 999) {
+                    amount++;                    
+                    document.getElementById(input_amount_id).setAttribute('value', amount);
+                }
+            }
+            console.log('<<-------------------POINT1');
+            let prod_cost = document.getElementById(grp_id + '+_cost');
+            let prod_amount = document.getElementById(grp_id + '+_amount');
+            let cost = parseFloat(prod_cost.getAttribute('prod_cost_init')) * parseFloat(prod_amount.getAttribute('value'));
+            prod_cost.innerHTML = cost;
+            console.log('<<-------------------POINT2');
+            const prods_costs = document.querySelectorAll('.prod_cost');            
+            let totalcost = 0;            
+            prods_costs.forEach(function (el) {
+                totalcost += parseFloat(el.innerHTML);                
+            });
+            document.getElementById('total_cost').innerHTML = totalcost;
+        }
+
+        
+        
+        //-----------------------ORDER COMPLETION           
+        
+        async function CreateOrder() {                       
+                console.log('--------------------In Complete_order1()--1');
+                        
+            let allidnodes = document.querySelectorAll('.id');
+
+            console.log('--------------------In Complete_order1()--2');
+
+            let BasketItems = [];
+            allidnodes.forEach(function (node) {
+                let ProductId = node.getAttribute('id');
+                console.log('id = ' + ProductId);
+                let Amount = document.getElementById(ProductId + '+_amount').getAttribute('value');
+                console.log('Amount = ' + Amount);
+                let Cost = document.getElementById(ProductId + '+_cost').getAttribute('prod_cost_init').toString().replace(',', '.');
+                console.log('Cost = ' + Cost);
+                let FullCost = document.getElementById(ProductId + '+_cost').innerHTML.toString().replace(',', '.');
+                console.log('FullCost = ' + FullCost);
+                let Comment = document.getElementById('comment').innerHTML;
+                                
+                let bi = {};
+                bi.ProductId = ProductId;
+                bi.Amount =  Number.parseInt(Amount);
+                bi.Cost = Number.parseFloat(Cost);
+                bi.FullCost = Number.parseFloat(FullCost);
+
+                BasketItems.push(bi);
+            });
+                        
+            let Comment = document.getElementById('comment').innerHTML;
+                console.log('comment = ' + Comment);                
+            let TotalCost = document.getElementById('total_cost').innerHTML.toString().replace(',', '.');
+                console.log('TotalCost = ' + TotalCost.toString());            
+            
+            order = {};
+            order.Comment = Comment;
+            order.TotalCost = TotalCost;
+            order.BasketItems = BasketItems;
+                       
+            console.log('Send request to /Order/CreateOrder');
+
+            console.log('--->>>JSON.stringify(order) =' + JSON.stringify(order));
+            let jstr = JSON.stringify(order);
+            console.log('--->>>jstr =' + jstr);
+
+            //const result = await
+        const result = await fetch('/Order/Order_Create', {
+            method: 'POST',
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(order)
+            });                        
+            console.log('Send request to /Order/CreateOrder COMPLETED');
+
+            if(result.ok) window.location.href = '/order/Order_Complete';
+        }        
+                      
+        console.log('<<-------------------POINT6');
+        
+        function test1() {
+            console.log('In test1 :');
+            window.location.href = '/order/test1';
+            //fetch('/Order/test1').then(resp=>resp.json()).then(data => { console.log(data) } ).catch(error => console.error('Unable to get items.', error));
+        }
+        async function test2() {
+            console.log('In test2 :');
+            var data = { 'name': 'Dharmendra' };
+            const res = await fetch("/Order/test2", {
+                                            method: "POST",
+                                            body: JSON.stringify('Dharmendra'),
+                                            headers: { "Content-Type": "application/json" }
+                                        });
+
+            const result = await res.json();
+            console.log('result = ' + result);
+            alert('Name : ' + result.name + '\nDate : ' + result.dateTime);
+        }
+
+        function test3() {            
+            let str = "string from POST method of fetch on Client";
+            fetch('/Order/test3', { 
+                method: 'POST', 
+                headers: {'Accept': 'text/plain','Content-Type': 'application/json'},
+                body: JSON.stringify("string99999")
+            })
+            .catch(error => console.error('Unable to add item.', error));
+        }
+    console.log('<<-------------------POINT_END');
+</script>
+
 @model IEnumerable<Product>
 
 <div style="margin-top: 60px;">
@@ -15,39 +165,98 @@
 
 @foreach (var mod in Model)
 {
+    <div id="@mod.Id" class="id" hidden></div>
+    <div style="border-style:solid; border-width: 1px; border-color:lightgray; margin-bottom:5px;padding:5px">
     <div class="row g-4">
+        
+        <!--COLUMN---IMAGE---------------------------------->
         <div class="col-lg-3 col-md-3 col-sm-3">
             <div class="card" style="max-width:300px;">
                 <img src="../images/@mod.ImageFile" class="card-img-top" alt="...">                
             </div>
         </div>
 
-        <!--Description  style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-height:100px;"-->
-        <div class="col-lg-7 col-md-7 col-sm-7">
+        <!--COLUMN---DESCRIPTION---------------------------------->
+        <div class="col-lg-5 col-md-5 col-sm-12">
             <p> <b> @mod.Name </b> </p> <br />
             <p>@mod.ShortDescription</p>
         </div>
 
-        <!--Product Total Cost  row-cols-2 row-cols-lg-2-->
-        <div class="col-lg-2 col-md-2 col-sm-1">
-            <p style="text-align: right;"> <b> Цена: </b> <br/> @mod.Cost р.</p>
+        <!--COLUMN---PRODUCT COST---------------------------------->
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="container">
+                <!-- Control +/- START -->
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-9" style="text-align:center;">
+                         <div>
+                                <p><b> @mod.Cost </b>р. за 1шт.</p>
+                         </div>
+                         <div class="input-group" style="width:110px; height:30px; margin:auto">
+                            <span class="input-group-btn" style="height:30px">
+                                    <button id="@mod.Id+_mnus" class="btn btn-danger btn-minus" type="button" style="width:30px; height:30px; display: flex; align-items: center; justify-content: center;" >-</button>
+                            </span>
+
+                            <input id="@mod.Id+_amount" type="text" class="form-control input-amount" value="1" style="width:40px;height:30px" disabled>
+
+                            <div>
+                                <span class="input-group-btn">
+                                        <button id="@mod.Id+_plus" class="btn btn-success btn-plus" type="button" style="width:30px;height:30px;display: flex; align-items: center; justify-content: center;">+</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3" style="text-align:right;">
+                        <p> <b> Цена: </b> </p>                        
+                            <div> 
+                                <span id="@mod.Id+_cost" class="prod_cost" prod_cost_init="@mod.Cost"> @mod.Cost </span> 
+                                р.
+                            </div>
+                    </div>
+                </div>
+                <!-- Control +/- END -->
+            </div>            
+            
         </div>
         @{ totalcost += mod.Cost; }
+        </div>
     </div>
 }
+
 <div class="row g-4">
-    <div class="col-lg-10 col-md-10 col-sm-10">        
+    <div class="col-lg-9 col-md-8 col-sm-8">
     </div>    
-    <div class="col-lg-2 col-md-2 col-sm-2" style="text-align: right;">
+    <div class="col-lg-3 col-md-4 col-sm-4" style="text-align: right;">
         <!--Total COST-->
-        <p style="text-align: right;"> <h4>Полная стоимость: <br /> @totalcost р. </h4></p>
+        <p style="text-align: right;"> <h4>Полная стоимость: </h4></p>
+        <h4><span style="text-align: right;" id="total_cost" class="total_cost">@totalcost</span> р.</h4>
     </div>
 </div>
 
 <div class="row g-4">
-    <div class="col-lg-9 col-md-9 col-sm-9 col-xm-3">
+    <div class="col-lg-6 col-md-6 col-sm-6"></div>
+    <div class="col-lg-6 col-md-6 col-sm-6" style="text-align: left;">
+        <p>Комментарии к заказу:</p>
+        <textarea id="comment" rows="4" cols="50" placeholder="Оставьте контактные данные..." style="width:100%" onkeyup="document.getElementById('comment').innerHTML = this.value;"></textarea>
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xm-3" style="text-align: right;">
-        <button class="btn btn-success btn-lg">Сделать заказ</button>
+</div>
+<br />
+<div class="row g-4">
+    <div class="col-lg-9 col-md-8 col-sm-8"></div>
+    <div class="col-lg-3 col-md-4 col-sm-4" style="text-align: right;">
+        <a id="button_make_order" class="btn btn-success btn-lg" asp-controller="Order" asp-action="Completed" style="width:150px; font-size:17px"> Сделать заказ </a>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-9 col-md-8 col-sm-8"></div>
+    <div class="col-lg-3 col-md-4 col-sm-4" style="text-align: right;">
+        <a id="test1" class="btn btn-success btn-lg"  style="width:150px; font-size:17px"> test1 </a>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-9 col-md-8 col-sm-8"></div>
+    <div class="col-lg-3 col-md-4 col-sm-4" style="text-align: right;">
+        <a id="test2" class="btn btn-success btn-lg" style="width:150px; font-size:17px"> test2 </a>
     </div>
 </div>
