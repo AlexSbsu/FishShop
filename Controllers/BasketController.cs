@@ -41,25 +41,10 @@ namespace Fish_Shop
 
             Console.WriteLine("string[] basketprodlist :");
             foreach(var p in basketprodlist) Console.WriteLine("prod ID = " + p);
-
-            // attendee Ids with three Ids (123, 456, 789)
-            // SELECT * FROM People WHERE AttendeeId IN(123, 456, 789)
-            // List<Person> attendees = await _context.People.Where(p => attendeeIds.Contains(p.AttendeeId)).ToListAsync();
-
-            var products = db.Products.Where(p => basketprodlist.Contains(p.Id)).OrderBy(p=>p.Name);
-            //var prods = db.Products.Where(p=>p.Id!=null);
+            
+            var products = db.Products.Where(p => basketprodlist.Contains(p.Id)).OrderBy(p=>p.Name);            
 
             return View("Basket_View_Step1", await products.ToListAsync());
         }
-
-        //[HttpGet]
-        public IActionResult Index2()
-        {            
-            Console.WriteLine("basketProdList = " + _basketProdList);
-
-            return View("Index", _basketProdList);
-        }
-
-
     }
 }

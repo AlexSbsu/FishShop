@@ -4,11 +4,21 @@ namespace Fish_Shop
 {
     public class BasketItem
     {
-        [Key]
-        public string Id { get; set; }
-        public string CartId { get; set; }
-        public int Amount { get; set; }
+        [Required]
+        public int Id { get; set; }
+        [Required]
         public int ProductId { get; set; }
-        public virtual Product Product { get; set; }
+
+        [Required]
+        public int Amount { get; set; }
+
+        [Required]
+        public decimal Cost { get; set; }
+
+        [Required]
+        public decimal FullCost { get; set; }
+
+        [Required]
+        public string OrderId { get; set; }
     }
 }

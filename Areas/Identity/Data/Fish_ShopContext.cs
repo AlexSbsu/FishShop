@@ -13,13 +13,13 @@ public class Fish_ShopContext : IdentityDbContext<IdentityUser>
     public DbSet<Product> Products { get; set; } = null!;
     //public DbSet<User> Users { get; set; } = null!;
     public DbSet<Order> Orders { get; set; } = null!;
-    
+    public DbSet<BasketItem> BasketItems { get; set; }    
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer("Server=comp\\LOCALSQLSERVER;Database=Fish_Shop_DB;Trusted_Connection=True;TrustServerCertificate=True;"); //1st
 
         //optionsBuilder.UseSqlite("Data Source=helloapp.db");     //2nd if no service connected
-
         //LOGGING
         //optionsBuilder.LogTo(logstream.WriteLine, LogLevel.Trace); //possible without LogLevel.Information
     }

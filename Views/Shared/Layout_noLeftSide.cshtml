@@ -20,15 +20,15 @@
     </style>
 </head>
 
-<body class="container-fluid" style="background-image:url('../images/fon_3216x2144_pexels-photo-4833216.jpeg')">
+<body class="container-fluid" style="background-image:url('../images/fon_3216x2144_pexels-photo-4833216.jpeg')" style="max-width:1500px">
     
     <!-----------------------HEADER-MY------------->    
   
     <!---------NAVIGATION-MY-->
     
-    <div class="row">
+    <div class="row" style="margin-bottom:50px;">
         <nav class="navbar navbar-expand-md fixed-top border-bottom navbar-toggleable-sm navbar-light bg-white box-shadow col-lg-12 col-md-12 col-sm-12">
-        <div class="container-fluid">
+            <div class="container-fluid" style="max-width:1500px">
                 <a class="nav-link active navbar-brand" aria-current="page" asp-controller="Home" asp-action="index"> Главная </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
                                                               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,8 +68,10 @@
         </nav>
     </div>
 
-    <div class="row window-full">
-
+    <div style="margin-bottom:50px"> <!-- class="row window-full"-->
+        <aside class="col-lg-2 col-md-2 col-sm-12" style="margin-top:50px">
+            
+        </aside>
 <!-----------------------MAIN-MY------------->
         
                 @RenderBody()

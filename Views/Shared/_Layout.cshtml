@@ -60,10 +60,12 @@
             }                        
         }
 
-        function handleClick() {
-            document.addEventListener('click', function (event) {
+        document.addEventListener('click', handleClick);
+
+        function handleClick(event) {            
                 console.log('user clicked: ', event.target);
                 var btn = event.target;
+                //---MAIN select
                 if (btn.innerHTML.trim() == 'В корзину' && btn.classList.contains("basketAddRemove")) {
                     btn.innerHTML = 'В корзине';
                     btn.classList.add('btn-danger');
@@ -88,9 +90,18 @@
                         prodsTobuyPrint();                        
                     }
                 }
-            });
-        }
-        handleClick();
+                //---BASKET change amount
+                if (btn.classList.contains("btn-minus")) {
+                    let grp_id = btn.id.slice(0, -6);
+                    let grp_input_id = grp_id + "_amount";
+                    if (grp_input_id.value > 0) grp_input_id.value -= 1;                    
+                }
+                if (btn.classList.contains("btn-plus")) {
+                    let grp_id = btn.id.slice(0, -6);
+                    let grp_input_id = grp_id + "_amount";
+                    if (grp_input_id.value < 999) grp_input_id.value += 1;
+                }            
+        }        
         
         function prodsTobuySaveToCookie() {
             var prodsTobuycookieVal = JSON.stringify(prodsTobuy);
@@ -118,15 +129,14 @@
     </script>
 </head>
 
-<body class="container-fluid">
-
+<body class="container-fluid" style="max-width:1500px">
     
     <!-----------------------HEADER-MY------------->    
   
-    <!---------NAVIGATION START--------->
-    <div class="row" style="margin-bottom:50px">
+    <!---------NAVIGATION START--------->   
+    <div class="row" style="margin-bottom:50px;">
         <nav class="navbar navbar-expand-lg fixed-top border-bottom navbar-toggleable-sm navbar-light bg-white box-shadow col-12">
-            <div class="container-fluid">
+            <div class="container-fluid" style="max-width:1500px">
                 
                 <a class="nav-link active navbar-brand" aria-current="page" asp-controller="Home" asp-action="index"> Главная </a>
                                 
@@ -151,8 +161,7 @@
                                 <li><a class="dropdown-item" href="#">Item3</a></li>
                             </ul>
                         </div>
-                    <!-------------Dropdown-MY------------->
-                       
+                    <!-------------Dropdown-MY------------->                       
                             @{
                                 await Html.RenderPartialAsync("_LoginPartial");
                             }
@@ -167,15 +176,10 @@
                 <!-------------Collapsed Menu END------------->                
                 
                 <!-------------Basket START------------------->
-
-                <!--asp-controller="Basket" asp-action="Index" asp-route-basketProdList="222" onclick="prodsTobuySendString()"-->
-                
-                
-                <input type="text" id="textinput_basketProdList" name="textinput_basketProdList" hidden/>
+                                                
                     <a id="basket" class="btn btn-outline-secondary basketEmpty">
                         <img src="/images/shopping-cart.png" width="16" height="16" /> <span id="basket_counter">0</span>
-                </a>
-                
+                    </a>
               
                 <!-------------Basket END--------------------->
             </div>
@@ -205,7 +209,7 @@
 <!-----------------------FOOTER------------->
     <footer class="border-top footer fixed-bottom text-muted bg-white box-shadow">
         <div class="container">
-            &copy; 2024 - Fish_Shop - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - Fish_Shop <!-- - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> -->
             @RenderSection("Footer",false)
         </div>
     </footer>
@@ -214,5 +218,7 @@
 <script>
         
 </script>
+    
+    </div>
 </body>
 </html>
