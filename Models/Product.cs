@@ -9,7 +9,7 @@ namespace Fish_Shop
 
         [Required]
         [MaxLength(50)]
-        public string Name { get; set; }
+        public string Name { get; set; }        
         public string? ShortDescription { get; set; }
         public string? Description { get; set; }
 

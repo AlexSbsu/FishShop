@@ -1,6 +1,56 @@
-﻿@{
-    ViewData["About"] = "О нас";
+﻿
+@{
+    ViewData["About"] = "Заказ";
     Layout = "Layout_noLeftSide";
+
 }
 
-<h2>Заказ создан</h2>
+@model IQueryable<Order>
+
+<style>
+    table {
+        border: 1px solid black; 
+        text-align:left;        
+    }
+
+    tr, th,td {
+        border: 1px solid black;
+        text-align: left; 
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+    .align_right{
+        text-align:right
+    }
+
+</style>
+
+
+<div>
+
+    @foreach(var order in Model)
+    {
+        <h2>Заказ номер @order.Number создан:</h2>
+            <table>
+                <tr>
+                    <th>Название</th>
+                    <th>Цена</th>
+                    <th>Колличество</th>
+                    <th>Полная стоимость</th>
+                </tr>
+            @foreach (var orderitem in order.OrderItems)
+            {
+                <tr>
+                    <td>@orderitem.Name</td>
+                    <td class="align_right">@orderitem.Cost</td>
+                    <td class="align_right">@orderitem.Amount</td>
+                    <td class="align_right">@orderitem.FullCost</td>
+                </tr>             
+            }                
+            </table>
+            }
+
+
+
+</div>

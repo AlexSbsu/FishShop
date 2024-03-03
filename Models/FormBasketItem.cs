@@ -6,6 +6,8 @@ namespace Fish_Shop
     {        
         [Required]
         public string ProductId { get; set; }
+        [Required]        
+        public string Name { get; set; }
 
         [Required]
         public int Amount { get; set; }

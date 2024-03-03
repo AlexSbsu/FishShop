@@ -132,59 +132,11 @@
 <body class="container-fluid" style="max-width:1500px">
     
     <!-----------------------HEADER-MY------------->    
-  
-    <!---------NAVIGATION START--------->   
-    <div class="row" style="margin-bottom:50px;">
-        <nav class="navbar navbar-expand-lg fixed-top border-bottom navbar-toggleable-sm navbar-light bg-white box-shadow col-12">
-            <div class="container-fluid" style="max-width:1500px">
-                
-                <a class="nav-link active navbar-brand" aria-current="page" asp-controller="Home" asp-action="index"> Главная </a>
-                                
-                <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-------------START Collapsed Menu------------->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="navbar-nav" style="display: flex; justify-content: space-between; align-items: center;">
-                        <a class="nav-link" href="feedback.html" style="display:none"> История заказов </a>
-                        <a class="nav-link" href="feedback.html" style="display:none"> Обратная связь  </a>
-                        <a class="nav-link" aria-current="page" asp-controller="Home" asp-action="about"> О нас </a>
-                        <!-------------Dropdown------------->
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Разное</a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a class="dropdown-item" href="#">Item1</a></li>
-                                <li><a class="dropdown-item" href="#">Item2</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Item3</a></li>
-                            </ul>
-                        </div>
-                    <!-------------Dropdown-MY------------->                       
-                            @{
-                                await Html.RenderPartialAsync("_LoginPartial");
-                            }
-
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Поиск...." aria-label="Поиск...">
-                                <button class="btn btn-outline-success" type="submit">Поиск</button>
-                            </form>
-                       
-                    </div>
-                </div>
-                <!-------------Collapsed Menu END------------->                
-                
-                <!-------------Basket START------------------->
-                                                
-                    <a id="basket" class="btn btn-outline-secondary basketEmpty">
-                        <img src="/images/shopping-cart.png" width="16" height="16" /> <span id="basket_counter">0</span>
-                    </a>
-              
-                <!-------------Basket END--------------------->
-            </div>
-        </nav>
-    </div>
+    
+    <!---------NAVIGATION START--------->
+    @{
+        await Html.RenderPartialAsync("Layout_NavbarPartial");
+    }
     <!---------NAVIGATION END--------->
 
     <div class="row" style="margin-bottom:50px">

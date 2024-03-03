@@ -35,7 +35,17 @@ namespace Fish_Shop
                     sortProducts.costasc  => db.Products.OrderBy(p => p.Cost),
                     sortProducts.costdesc => db.Products.OrderByDescending(p => p.Cost)
             };
-                
+
+            Console.WriteLine("User.Identity.IsAuthenticated = " + User.Identity.IsAuthenticated);
+            Console.WriteLine("User.Identity.Name = " + User.Identity.Name);
+            Console.WriteLine("User.Identity.AuthenticationType = " + User.Identity.AuthenticationType);
+            Console.WriteLine("User.Identity.GetType = " + User.Identity.GetType);
+
+            string userid;
+            if (!User.Identity.IsAuthenticated) userid = db.Users.Where(u => u.UserName == "anonimus@anonimus.ru").Select(u => u.Id).FirstOrDefault();
+            else userid = db.Users.Where(u => u.UserName == User.Identity.Name).Select(u => u.Id).FirstOrDefault();
+            Console.WriteLine("userid = " + userid);
+
             return View("Home_View", await products.ToListAsync());
         }
 

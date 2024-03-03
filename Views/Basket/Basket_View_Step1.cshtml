@@ -12,11 +12,8 @@
         function handleClick(event) {
             console.log('user clicked: ', event.target);
             var btn = event.target;
-
-            if (btn.id == 'test1') CreateOrder();
-            if (btn.id == 'test2') test2();
-
-            if (btn.id == 'button_make_order') Complete_order();
+            
+            if (btn.id == 'button_make_order') CreateOrder();
 
             if (btn.classList.contains("btn-minus") || btn.classList.contains("btn-plus")) Change_amount(btn);
         }
@@ -59,9 +56,7 @@
                 totalcost += parseFloat(el.innerHTML);                
             });
             document.getElementById('total_cost').innerHTML = totalcost;
-        }
-
-        
+        }        
         
         //-----------------------ORDER COMPLETION           
         
@@ -76,6 +71,8 @@
             allidnodes.forEach(function (node) {
                 let ProductId = node.getAttribute('id');
                 console.log('id = ' + ProductId);
+                let Name = document.getElementById(ProductId + '+_name').innerHTML.trim();
+                console.log('Name = ' + Name);
                 let Amount = document.getElementById(ProductId + '+_amount').getAttribute('value');
                 console.log('Amount = ' + Amount);
                 let Cost = document.getElementById(ProductId + '+_cost').getAttribute('prod_cost_init').toString().replace(',', '.');
@@ -86,6 +83,7 @@
                                 
                 let bi = {};
                 bi.ProductId = ProductId;
+                bi.Name = Name;
                 bi.Amount =  Number.parseInt(Amount);
                 bi.Cost = Number.parseFloat(Cost);
                 bi.FullCost = Number.parseFloat(FullCost);
@@ -110,16 +108,21 @@
             console.log('--->>>jstr =' + jstr);
 
             //const result = await
-        const result = await fetch('/Order/Order_Create', {
-            method: 'POST',
-                headers: {"Content-Type": "application/json"},
-                body: JSON.stringify(order)
-            });                        
+            const result = await fetch('/Order/Order_Create',
+                {
+                    method: 'POST',
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(order)
+            }).then(response => response.text())
+            .then(text => window.location.href = '/order/Order_Complete?orderid=' + text);
+        
             console.log('Send request to /Order/CreateOrder COMPLETED');
-
-            if(result.ok) window.location.href = '/order/Order_Complete';
+            
+            //if(result.ok) window.location.href = '/order/Order_Complete';
         }        
-                      
+        
+        
+
         console.log('<<-------------------POINT6');
         
         function test1() {
@@ -129,10 +132,10 @@
         }
         async function test2() {
             console.log('In test2 :');
-            var data = { 'name': 'Dharmendra' };
+            var data = { 'name': 'xxxNAMEzzz' };
             const res = await fetch("/Order/test2", {
                                             method: "POST",
-                                            body: JSON.stringify('Dharmendra'),
+                                            body: JSON.stringify('xxxNAMEzzz'),
                                             headers: { "Content-Type": "application/json" }
                                         });
 
@@ -151,6 +154,7 @@
             .catch(error => console.error('Unable to add item.', error));
         }
     console.log('<<-------------------POINT_END');
+
 </script>
 
 @model IEnumerable<Product>
@@ -178,7 +182,7 @@
 
         <!--COLUMN---DESCRIPTION---------------------------------->
         <div class="col-lg-5 col-md-5 col-sm-12">
-            <p> <b> @mod.Name </b> </p> <br />
+            <p> <b> <span id="@mod.Id+_name"> @mod.Name </span> </b> </p> <br />
             <p>@mod.ShortDescription</p>
         </div>
 
@@ -243,20 +247,6 @@
 <div class="row g-4">
     <div class="col-lg-9 col-md-8 col-sm-8"></div>
     <div class="col-lg-3 col-md-4 col-sm-4" style="text-align: right;">
-        <a id="button_make_order" class="btn btn-success btn-lg" asp-controller="Order" asp-action="Completed" style="width:150px; font-size:17px"> Сделать заказ </a>
-    </div>
-</div>
-
-<div class="row g-4">
-    <div class="col-lg-9 col-md-8 col-sm-8"></div>
-    <div class="col-lg-3 col-md-4 col-sm-4" style="text-align: right;">
-        <a id="test1" class="btn btn-success btn-lg"  style="width:150px; font-size:17px"> test1 </a>
-    </div>
-</div>
-
-<div class="row g-4">
-    <div class="col-lg-9 col-md-8 col-sm-8"></div>
-    <div class="col-lg-3 col-md-4 col-sm-4" style="text-align: right;">
-        <a id="test2" class="btn btn-success btn-lg" style="width:150px; font-size:17px"> test2 </a>
+        <a id="button_make_order" class="btn btn-success btn-lg" style="width:150px; font-size:17px"> Сделать заказ </a>
     </div>
 </div>
