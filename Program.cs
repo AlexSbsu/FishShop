@@ -38,8 +38,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    //pattern: "{controller=Home}/{action=methmyparams}/{id?}");
+    name: "default",    
     pattern: "{controller=Home}/{action=index}/{id?}");
 
 app.Run();

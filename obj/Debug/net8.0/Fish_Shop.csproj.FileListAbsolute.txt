@@ -780,3 +780,5 @@ D:\Git_reps\Fish_Shop\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 D:\Git_reps\Fish_Shop\obj\Debug\net8.0\scopedcss\Views\Shared\Layout_noLeftSide.cshtml.rz.scp.css
 D:\Git_reps\Fish_Shop\obj\Debug\net8.0\Fish_Shop.csproj.Up2Date
 D:\Git_reps\Fish_Shop\obj\Debug\net8.0\scopedcss\Views\Shared\Layout_NavbarPartial.cshtml.rz.scp.css
+D:\Git_reps\Fish_Shop\obj\Debug\net8.0\scopedcss\Views\HomeTest\HomeTest_Layout.cshtml.rz.scp.css
+D:\Git_reps\Fish_Shop\obj\Debug\net8.0\scopedcss\Views\HomeTest\Layout_NavbarPartial.cshtml.rz.scp.css

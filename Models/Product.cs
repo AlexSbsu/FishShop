@@ -25,5 +25,8 @@ namespace Fish_Shop
 
         [Required]
         public decimal Cost { get; set; }
+        
+        [Required]
+        public string CategoryId { get; set; }
     }
 }

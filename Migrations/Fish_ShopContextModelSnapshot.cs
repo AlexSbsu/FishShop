@@ -22,6 +22,24 @@ namespace Fish_Shop.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Fish_Shop.Category", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("Fish_Shop.Order", b =>
                 {
                     b.Property<string>("Id")
@@ -91,6 +109,10 @@ namespace Fish_Shop.Migrations
 
                     b.Property<int>("Amount")
                         .HasColumnType("int");
+
+                    b.Property<string>("CategoryId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Cost")
                         .HasColumnType("decimal(18,2)");
@@ -325,7 +347,7 @@ namespace Fish_Shop.Migrations
             modelBuilder.Entity("Fish_Shop.OrderItem", b =>
                 {
                     b.HasOne("Fish_Shop.Order", "Order")
-                        .WithMany("BasketItems")
+                        .WithMany("OrderItems")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -386,7 +408,7 @@ namespace Fish_Shop.Migrations
 
             modelBuilder.Entity("Fish_Shop.Order", b =>
                 {
-                    b.Navigation("BasketItems");
+                    b.Navigation("OrderItems");
                 });
 #pragma warning restore 612, 618
         }

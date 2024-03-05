@@ -1,0 +1,25 @@
+﻿<!--HomeTestProducts_PartialView-->
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    @foreach (var mod in Model)
+    {
+        <div class="col">
+            <div id="card" class="card" style="max-width:5000px; max-height:5000px; ">
+                <a href="/Product/Product?productid=@mod.Id">
+                    <img src="images/@mod.ImageFile" class="card-img-top" alt="...">
+                </a>
+
+                <div class="card-body">
+                    <h5 class="card-title">@mod.Name</h5>
+                    <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-height:100px;">@mod.ShortDescription</p>
+                    <div class="center">
+                        <button class="btn btn-success basketAddRemove" id="@mod.Id">В корзину</button>
+                    </div>
+                    <p style="text-align: right;">Цена: @mod.Cost р.</p>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

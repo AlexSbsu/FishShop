@@ -13,7 +13,8 @@ public class Fish_ShopContext : IdentityDbContext<IdentityUser>
     public DbSet<Product> Products { get; set; } = null!;
     //public DbSet<User> Users { get; set; } = null!;
     public DbSet<Order> Orders { get; set; } = null!;
-    public DbSet<OrderItem> OrderItems { get; set; }    
+    public DbSet<OrderItem> OrderItems { get; set; }
+    public DbSet<Category> Categories { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

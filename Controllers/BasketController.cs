@@ -7,16 +7,15 @@ using System.Linq;
 namespace Fish_Shop
 {
     public class BasketController : Controller
-    {
-        string? _basketProdList;
+    {        
         Fish_ShopContext db;
 
-        private readonly ILogger<HomeController> _logger;
+        //private readonly ILogger<HomeController> _logger;
 
         public BasketController(ILogger<HomeController> logger, Fish_ShopContext context)
         {
             db = context;        
-            _logger = logger;
+            //_logger = logger;
         }
         public async Task<IActionResult> Index(string[] basketprodlist)
         {
@@ -42,7 +41,7 @@ namespace Fish_Shop
             Console.WriteLine("string[] basketprodlist :");
             foreach(var p in basketprodlist) Console.WriteLine("prod ID = " + p);
             
-            var products = db.Products.Where(p => basketprodlist.Contains(p.Id)).OrderBy(p=>p.Name);            
+            var products = db.Products.Where(p => basketprodlist.Contains(p.Id)).OrderBy(p=>p.Name);
 
             return View("Basket_View_Step1", await products.ToListAsync());
         }

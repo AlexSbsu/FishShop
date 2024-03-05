@@ -28,9 +28,7 @@
                             </ul>
                         </div>
                     <!-------------Dropdown-MY------------->                       
-                            @{
-                                await Html.RenderPartialAsync("_LoginPartial");
-                            }
+                            
 
                             <form class="d-flex" role="search">
                                 <input class="form-control me-2" type="search" placeholder="Поиск...." aria-label="Поиск...">
@@ -42,7 +40,9 @@
                 <!-------------Collapsed Menu END------------->                
                 
                 <!-------------Basket START------------------->
-                                                
+                    @{
+                        await Html.RenderPartialAsync("_LoginPartial");
+                    }                            
                     <a id="basket" class="btn btn-outline-secondary basketEmpty">
                         <img src="/images/shopping-cart.png" width="16" height="16" /> <span id="basket_counter">0</span>
                     </a>

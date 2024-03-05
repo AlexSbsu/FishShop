@@ -22,44 +22,8 @@
 
         let prodsTobuy = [];
         let prodsTobuyString = "";
-        let prodsTobuyRequestString = "";
-
-        function prodsTobuyPrint() {
-            console.log('--->>>prodsTobuyPrint : ');            
-            if (prodsTobuy.length == 0) console.log('...prodsTobuy Empty...')
-            else prodsTobuy.forEach((number) => console.log(number));
-            console.log('prodsTobuyString = ' + prodsTobuy.toString());
-            console.log('prodsTobuyRequestString = ' + prodsTobuyRequestString.toString());
-        };
-
-        function prodsTobuyRequestStringBuild() { 
-            prodsTobuyRequestString = "";
-            for (let i = 0; i < prodsTobuy.length; i++) { 
-                prodsTobuyRequestString += "basketprodlist[" + i + "]=" + prodsTobuy[i] + "&";                
-            }
-            prodsTobuyRequestString = prodsTobuyRequestString.slice(0, prodsTobuyRequestString.length - 1);
-        }
-
-        function basketUpdate() {                
-            basket_counter.innerHTML = prodsTobuy.length;
-            if (prodsTobuy.length == 0) {
-                basket.classList.add('basketEmpty');                
-                basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);                
-                prodsTobuySaveToCookie();
-                //basket.setAttribute("asp-route-basketprodlist", prodsTobuyString); //not working
-                //textinput_basketProdList.setAttribute('value', prodsTobuyString);  //not working via form
-                //document.getElementById('basketProdList').value = prodsTobuyString;//not working via form
-            }
-            else {
-                basket.classList.remove('basketEmpty');                
-                basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);                
-                prodsTobuySaveToCookie();
-                //basket.setAttribute("asp-route-basketprodlist", prodsTobuyString); //not working
-                //textinput_basketProdList.setAttribute('value', prodsTobuyString);  //not working via form
-                //document.getElementById('basketProdList').value = prodsTobuyString;//not working via form
-            }                        
-        }
-
+        let prodsTobuyRequestString = "";       
+        //-----------------------------------------------------------------------CLICK EVENT-----------------------------------------------//
         document.addEventListener('click', handleClick);
 
         function handleClick(event) {            
@@ -100,8 +64,38 @@
                     let grp_id = btn.id.slice(0, -6);
                     let grp_input_id = grp_id + "_amount";
                     if (grp_input_id.value < 999) grp_input_id.value += 1;
-                }            
-        }        
+                }                                
+        }
+
+        function prodsTobuyPrint() {
+            console.log('--->>>prodsTobuyPrint : ');
+            if (prodsTobuy.length == 0) console.log('...prodsTobuy Empty...')
+            else prodsTobuy.forEach((number) => console.log(number));
+            console.log('prodsTobuyString = ' + prodsTobuy.toString());
+            console.log('prodsTobuyRequestString = ' + prodsTobuyRequestString.toString());
+        };
+
+        function prodsTobuyRequestStringBuild() {
+            prodsTobuyRequestString = "";
+            for (let i = 0; i < prodsTobuy.length; i++) {
+                prodsTobuyRequestString += "basketprodlist[" + i + "]=" + prodsTobuy[i] + "&";
+            }
+            prodsTobuyRequestString = prodsTobuyRequestString.slice(0, prodsTobuyRequestString.length - 1);
+        }
+
+        function basketUpdate() {
+            basket_counter.innerHTML = prodsTobuy.length;
+            if (prodsTobuy.length == 0) {
+                basket.classList.add('basketEmpty');
+                basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);
+                prodsTobuySaveToCookie();
+            }
+            else {
+                basket.classList.remove('basketEmpty');
+                basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);
+                prodsTobuySaveToCookie();
+            }
+        }
         
         function prodsTobuySaveToCookie() {
             var prodsTobuycookieVal = JSON.stringify(prodsTobuy);
@@ -109,23 +103,93 @@
             //.getCookie('prodsTobuycookie')
             console.log('Cookies prodsTobuycookie saved : ' + document.cookie);
         }
+        
+        //-----------------------------------------------------------------------CLICK EVENT-----------------------------------------------//
 
-        function prodsTobuySendString() {
-            prodsTobuyString = prodsTobuy.toString();
-            console.log('from prodsTobuySendString() prodsTobuyString = ' + prodsTobuyString);
+        //-----------------------------------------------------------------------CHANGE EVENT-----------------------------------------------//
 
-            $.ajax({
-                type: "POST",
-                url: "/Basket/index",
-                traditional: true,
-                cache: false,
-                dataType: "json",
-                contentType: 'application/json; charset=utf-8',
-                data: JSON.stringify({ prodsTobuy })
-                //success: function (data) {Result}
-            });                
+        document.addEventListener('change', handlchange);
+        
+        function handlchange(event) { 
+            console.log('!!!changed');
+            var el = event.target;
+            
+            if ( el.classList.contains('sort_list') || el.classList.contains('filter_item') ) 
+            {
+                console.log('!!!Inside change action');
+                let filters = [];
+                //---------------------------sort_list
+                const sortel = document.querySelector("#sort");
+                const id = sortel.options[sortel.selectedIndex].id;
+
+                console.log('selected sort element id = ' + id);
+                filters.push(id);
+
+                //---------------------------filter_item
+                let check_arr = [];
+
+                check_arr[0] = document.querySelector('#category_filter_all').checked;
+                check_arr[1] = document.querySelector('#category_filter_fish').checked;
+                check_arr[2] = document.querySelector('#category_filter_plant').checked;
+                check_arr[3] = document.querySelector('#category_filter_tool').checked;
+
+                console.log('check_arr[0] = ' + check_arr[0]);
+                console.log('check_arr[1] = ' + check_arr[1]);
+                console.log('check_arr[2] = ' + check_arr[2]);
+                console.log('check_arr[3] = ' + check_arr[3]);
+
+                let notall_checked = false;
+                for (let i = 0; i < check_arr.length; i++) {
+                    if (check_arr[i]) notall_checked = true;
+                }                
+                console.log('notall_checked = ' + notall_checked);
+
+                if (el.id == 'category_filter_all') {
+                        if (check_arr[0] && notall_checked) {
+                            document.querySelector('#category_filter_fish').checked = false;
+                            document.querySelector('#category_filter_plant').checked = false;
+                            document.querySelector('#category_filter_tool').checked = false;
+                        }
+                        if (!check_arr[0] && !notall_checked) {
+                            document.querySelector('#category_filter_all').checked = true;
+                        }
+                }
+                if (el.id != 'category_filter_all') {
+                        if (check_arr[0] && notall_checked) {
+                            document.querySelector('#category_filter_all').checked = false;                            
+                        }
+                        if (!check_arr[0] && !notall_checked) {
+                            document.querySelector('#category_filter_all').checked = true;
+                        }
+                }
+
+                let checked = document.querySelectorAll('.filter_item');
+                checked.forEach(e => { if (e.checked) filters.push(e.id); });
+
+                filters.forEach( e => { console.log('filters to send element : ' + e); });
+                
+                let filters_req = "";
+                let i = 0;
+                for (let i = 0; i < filters.length; i++) { 
+                    filters_req += 'filters[' + i + ']=' + filters[i] + '&';
+                }                
+                filters_req = filters_req.slice(0, filters_req.length - 1);
+                console.log('filters_req = ' + filters_req);
+
+                //window.location.href = '/?filters=' + filters_req)
+                //prodsTobuyRequestString += "basketprodlist[" + i + "]=" + prodsTobuy[i] + "&";
+                /*
+                const result = await fetch('/'
+                    ,{
+                        method: 'POST',
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(filters)
+                     }).then(response => response.text()).then(text => window.location.href = '/?filters=' + text);
+                */
+            }
         }
 
+        //-----------------------------------------------------------------------CHANGE EVENT-----------------------------------------------//
     </script>
 </head>
 
@@ -134,22 +198,16 @@
     <!-----------------------HEADER-MY------------->    
     
     <!---------NAVIGATION START--------->
-    @{
-        await Html.RenderPartialAsync("Layout_NavbarPartial");
-    }
+            @{
+                await Html.RenderPartialAsync("Layout_NavbarPartial");
+            }
     <!---------NAVIGATION END--------->
 
-    <div class="row" style="margin-bottom:50px">
-        <aside class="col-lg-2 col-md-2 col-sm-12" style="margin-top:50px">
-            <div class="position-fixed"> 
-            <div><b>Фильтр:</b></div>
-            <a href="#" title="Item1">LeftSide_Item1</a> 
-            <br />
-            <a href="#" class="class3" title="Item2">LeftSide_Item2</a>
-            <br />
-            <a href="#" target="_blank" class="class4" title="Item3">LeftSide_Item3</a>
-            </div>
-        </aside>
+    <!---------FILTER SIDE START------>
+            @{
+                await Html.RenderPartialAsync("Layout_FilterSide");
+            }
+    <!---------FILTER SIDE END------>
 
 <!-----------------------MAIN START------------->
 

@@ -5,12 +5,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using System.Linq;
 using System.Net;
 using static Azure.Core.HttpHeader;
+using static NuGet.Packaging.PackagingConstants;
 
 namespace Fish_Shop
 {
-    public enum sortProducts { nameasc, namedesc, costasc, costdesc};
+    public enum enum_SortProducts { nameasc, namedesc, costasc, costdesc};
     public class HomeController : Controller
     {
         Fish_ShopContext db;
@@ -22,18 +24,18 @@ namespace Fish_Shop
             db = context;        
             _logger = logger;
         }
-        
-        public async Task<IActionResult> Index(sortProducts sortorder = sortProducts.nameasc)
+
+        public async Task<IActionResult> Index(enum_SortProducts sortorder = enum_SortProducts.nameasc)
         {
             @ViewData["Title"] = "Главная";
-            
+
             IQueryable<Product>? products = db.Products;
             products = sortorder switch
             {
-                    sortProducts.nameasc  => db.Products.OrderBy(p => p.Name),
-                    sortProducts.namedesc => db.Products.OrderByDescending(p => p.Name),
-                    sortProducts.costasc  => db.Products.OrderBy(p => p.Cost),
-                    sortProducts.costdesc => db.Products.OrderByDescending(p => p.Cost)
+                enum_SortProducts.nameasc => db.Products.OrderBy(p => p.Name),
+                enum_SortProducts.namedesc => db.Products.OrderByDescending(p => p.Name),
+                enum_SortProducts.costasc => db.Products.OrderBy(p => p.Cost),
+                enum_SortProducts.costdesc => db.Products.OrderByDescending(p => p.Cost)
             };
 
             Console.WriteLine("User.Identity.IsAuthenticated = " + User.Identity.IsAuthenticated);
@@ -52,14 +54,7 @@ namespace Fish_Shop
         public IActionResult About()
         {
             return View();
-        }
-
-        [Authorize]
-        [Route("authcheck")]
-        public string authcheck()
-        {            
-            return $"YOU ARE AUTHORIZED";
-        }
+        }        
                
         public IActionResult Privacy()
         {

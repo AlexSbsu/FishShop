@@ -3,56 +3,68 @@
   "WorkspaceRootPath": "D:\\Git_reps\\Fish_Shop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\basket\\basket_view_step1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\basket\\basket_view_step1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\home\\home_view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\home\\home_view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\shared\\layout_filterside.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\shared\\layout_filterside.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\hometest\\hometestsortpanel_view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\hometest\\hometestsortpanel_view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\hometest\\hometestfilterside_view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\hometest\\hometestfilterside_view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\hometest\\hometest_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\hometest\\hometest_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\controllers\\hometestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:controllers\\hometestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\order\\order_complete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\order\\order_complete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\models\\formbasketitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:models\\formbasketitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\models\\formorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:models\\formorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\hometest\\hometestproducts_partialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\hometest\\hometestproducts_partialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\models\\formbasketitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:models\\formbasketitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\models\\formorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:models\\formorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\areas\\identity\\data\\fish_shopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,37 +82,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Git_reps\\Fish_Shop\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAIwCkAAABAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACgAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-13T20:55:57.198Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Fish_ShopContext.cs",
               "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Areas\\Identity\\Data\\Fish_ShopContext.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Data\\Fish_ShopContext.cs",
               "ToolTip": "D:\\Git_reps\\Fish_Shop\\Areas\\Identity\\Data\\Fish_ShopContext.cs",
               "RelativeToolTip": "Areas\\Identity\\Data\\Fish_ShopContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-27T22:22:51.641Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "site.css",
               "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -113,20 +125,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
               "ToolTip": "D:\\Git_reps\\Fish_Shop\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-28T02:05:07.517Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T04:18:21.904Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Models\\Order.cs",
@@ -139,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Models\\OrderItem.cs",
               "RelativeDocumentMoniker": "Models\\OrderItem.cs",
@@ -148,124 +173,149 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T23:47:27.918Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormOrder.cs",
-              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Models\\FormOrder.cs",
-              "RelativeDocumentMoniker": "Models\\FormOrder.cs",
-              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Models\\FormOrder.cs",
-              "RelativeToolTip": "Models\\FormOrder.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T23:18:03.183Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "FormBasketItem.cs",
               "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Models\\FormBasketItem.cs",
               "RelativeDocumentMoniker": "Models\\FormBasketItem.cs",
               "ToolTip": "D:\\Git_reps\\Fish_Shop\\Models\\FormBasketItem.cs",
               "RelativeToolTip": "Models\\FormBasketItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T23:40:24.66Z",
+              "WhenOpened": "2024-03-04T23:07:33.186Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
+              "Title": "FormOrder.cs",
+              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Models\\FormOrder.cs",
+              "RelativeDocumentMoniker": "Models\\FormOrder.cs",
+              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Models\\FormOrder.cs",
+              "RelativeToolTip": "Models\\FormOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T23:07:31.766Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Git_reps\\Fish_Shop\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAC4AAAAsAAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAANMAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-02T17:52:45.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Basket_View_Step1.cshtml",
-              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Views\\Basket\\Basket_View_Step1.cshtml",
-              "RelativeDocumentMoniker": "Views\\Basket\\Basket_View_Step1.cshtml",
-              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Views\\Basket\\Basket_View_Step1.cshtml",
-              "RelativeToolTip": "Views\\Basket\\Basket_View_Step1.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHUAAAAIAAAA",
+              "DocumentIndex": 0,
+              "Title": "Home_View.cshtml",
+              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Views\\Home\\Home_View.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Home_View.cshtml",
+              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Views\\Home\\Home_View.cshtml",
+              "RelativeToolTip": "Views\\Home\\Home_View.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-22T00:00:03.029Z",
+              "WhenOpened": "2024-02-23T22:47:12.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Layout_FilterSide.cshtml",
+              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Views\\Shared\\Layout_FilterSide.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Layout_FilterSide.cshtml",
+              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Views\\Shared\\Layout_FilterSide.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Layout_FilterSide.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-04T23:50:58.819Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
-              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "Controllers\\OrderController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAmwFEAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-01T03:10:40.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Order_Complete.cshtml",
-              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Views\\Order\\Order_Complete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Order\\Order_Complete.cshtml",
-              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Views\\Order\\Order_Complete.cshtml",
-              "RelativeToolTip": "Views\\Order\\Order_Complete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-26T22:23:12.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BasketController.cs",
-              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Controllers\\BasketController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BasketController.cs",
-              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Controllers\\BasketController.cs",
-              "RelativeToolTip": "Controllers\\BasketController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBYAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T02:42:00.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\Git_reps\\Fish_Shop\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAADAAAAAMAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAADgvx0AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-13T20:41:56.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Home_View.cshtml",
-              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Views\\Home\\Home_View.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Home_View.cshtml",
-              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Views\\Home\\Home_View.cshtml",
-              "RelativeToolTip": "Views\\Home\\Home_View.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAgAAAA",
+              "DocumentIndex": 5,
+              "Title": "HomeTestController.cs",
+              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Controllers\\HomeTestController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeTestController.cs",
+              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Controllers\\HomeTestController.cs",
+              "RelativeToolTip": "Controllers\\HomeTestController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwEIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T22:47:30.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeTest_Layout.cshtml",
+              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Views\\HomeTest\\HomeTest_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\HomeTest\\HomeTest_Layout.cshtml",
+              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Views\\HomeTest\\HomeTest_Layout.cshtml",
+              "RelativeToolTip": "Views\\HomeTest\\HomeTest_Layout.cshtml",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAAAKEAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-23T22:47:12.097Z",
+              "WhenOpened": "2024-03-04T23:14:25.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeTestFilterSide_View.cshtml",
+              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Views\\HomeTest\\HomeTestFilterSide_View.cshtml",
+              "RelativeDocumentMoniker": "Views\\HomeTest\\HomeTestFilterSide_View.cshtml",
+              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Views\\HomeTest\\HomeTestFilterSide_View.cshtml",
+              "RelativeToolTip": "Views\\HomeTest\\HomeTestFilterSide_View.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-03T23:07:33.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeTestSortPanel_View.cshtml",
+              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Views\\HomeTest\\HomeTestSortPanel_View.cshtml",
+              "RelativeDocumentMoniker": "Views\\HomeTest\\HomeTestSortPanel_View.cshtml",
+              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Views\\HomeTest\\HomeTestSortPanel_View.cshtml",
+              "RelativeToolTip": "Views\\HomeTest\\HomeTestSortPanel_View.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-04T23:05:54.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeTestProducts_PartialView.cshtml",
+              "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Views\\HomeTest\\HomeTestProducts_PartialView.cshtml",
+              "RelativeDocumentMoniker": "Views\\HomeTest\\HomeTestProducts_PartialView.cshtml",
+              "ToolTip": "D:\\Git_reps\\Fish_Shop\\Views\\HomeTest\\HomeTestProducts_PartialView.cshtml",
+              "RelativeToolTip": "Views\\HomeTest\\HomeTestProducts_PartialView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-04T23:10:42.215Z",
               "EditorCaption": ""
             }
           ]
