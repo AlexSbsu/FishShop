@@ -7,20 +7,12 @@
     <h2 style="text-align: center;">Рыбёшечки</h2>
 </div>
 <div class="dropdown" style="margin-bottom:30px">
-    <button class="btn btn-secondary btn-md dropdown-toggle bg-white box-shadow" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black">
-        Сортировать
-    </button>
-    <ul class="dropdown-menu">
-        <li><a class="dropdown-item" asp-action="Index" asp-route-sortOrder="nameasc">   Имя: По возрастанию  </a></li>
-        <li><a class="dropdown-item" asp-action="Index" asp-route-sortOrder="namedesc">  Имя: По убыванию     </a></li>
-        <li><a class="dropdown-item" asp-action="Index" asp-route-sortOrder="costasc">   Цена: По возрастанию </a></li>
-        <li><a class="dropdown-item" asp-action="Index" asp-route-sortOrder="costdesc">  Цена: По убыванию    </a></li>
-    </ul>
+    
 
     <select id="sort" class="btn btn-secondary btn-md dropdown-toggle bg-white box-shadow sort_list" style="color:black">            
-        <option id="nameasc" class="sort_item" selected> Имя: По возрастанию  </></option>
-            <option id="namedesc" class="sort_item"> Имя: По убыванию     </></option>
-            <option id="costasc"  class="sort_item"> Цена: По возрастанию </></option>
-            <option id="costdesc" class="sort_item"> Цена: По убыванию    </></option>
+            <option id="nameasc"  class="sort_item" selected> Имя: По возрастанию  </></option>
+            <option id="namedesc" class="sort_item">          Имя: По убыванию     </></option>
+            <option id="costasc"  class="sort_item">          Цена: По возрастанию </></option>
+            <option id="costdesc" class="sort_item">          Цена: По убыванию    </></option>
         </select><br /><br />
 </div> 

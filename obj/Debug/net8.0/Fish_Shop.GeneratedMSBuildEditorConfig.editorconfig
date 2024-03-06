@@ -86,6 +86,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVRlc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Git_reps/Fish_Shop/Views/HomeTest/PartialViewTest1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVRlc3RcUGFydGlhbFZpZXdUZXN0MS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git_reps/Fish_Shop/Views/HomeTest/PartialViewTest2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVRlc3RcUGFydGlhbFZpZXdUZXN0Mi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git_reps/Fish_Shop/Views/HomeTest/test1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVRlc3RcdGVzdDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Git_reps/Fish_Shop/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -100,10 +112,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Git_reps/Fish_Shop/Views/Order/Order_Complete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJfQ29tcGxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Git_reps/Fish_Shop/Views/Order/test1.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcdGVzdDEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Git_reps/Fish_Shop/Views/Product/Product_View.cshtml]

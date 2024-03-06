@@ -64,7 +64,9 @@
                     let grp_id = btn.id.slice(0, -6);
                     let grp_input_id = grp_id + "_amount";
                     if (grp_input_id.value < 999) grp_input_id.value += 1;
-                }                                
+                }
+
+            if (btn.id == 'refresh') testrefresh();
         }
 
         function prodsTobuyPrint() {
@@ -103,6 +105,55 @@
             //.getCookie('prodsTobuycookie')
             console.log('Cookies prodsTobuycookie saved : ' + document.cookie);
         }
+
+        function testrefresh() { 
+            console.log("!!!In testrefresh()");
+            let str = 'Рыба';
+            fetch('/HomeTest',
+                {
+                    method: 'POST',
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(str)
+                })
+                       .then(response => response.text())
+            .then(html => document.getElementById('partialdiv1').innerHTML = html);
+
+           /*
+           {{ method: 'GET', Conten- type: 'text/html', headers: { "Content-Type": "text/html" } }
+
+              document.getElementById('partialdiv1').innerHTML = 'in string';
+                          
+            //$("#partialdiv1").load("/HomeTest");
+
+            //fetch('/HomeTest',{'method': 'GET','Conten-type' : 'text/html',
+            /*
+            fetch('/HomeTest')
+                .then(function (response) {
+                    if (!response.ok) {
+                        console.log('response.status = ' + response.statusText);
+                    } 
+                    return response.html;
+                })
+                .then(function (html) {
+                     document.getElementById('partialdiv1').innerHTML = 'in string';                    
+                });
+            */
+            
+            /*
+            fetch('/HomeTest')
+                .then(function (response) {
+                    if (!response.ok) {
+                        div.innerHTML = `<h2>{response.status} - {response.statusTest}</h2>`;
+                    }
+                    return response.text();
+                })
+                .then(function (html) {
+                    partialdiv1.innerHTML = html;
+            });
+            */
+        }
+
+
         
         //-----------------------------------------------------------------------CLICK EVENT-----------------------------------------------//
 
@@ -168,24 +219,25 @@
 
                 filters.forEach( e => { console.log('filters to send element : ' + e); });
                 
+                /*
                 let filters_req = "";
                 let i = 0;
-                for (let i = 0; i < filters.length; i++) { 
-                    filters_req += 'filters[' + i + ']=' + filters[i] + '&';
-                }                
+                for (let i = 0; i < filters.length; i++) { filters_req += 'filters[' + i + ']=' + filters[i] + '&'; }
                 filters_req = filters_req.slice(0, filters_req.length - 1);
                 console.log('filters_req = ' + filters_req);
+                */
 
-                //window.location.href = '/?filters=' + filters_req)
-                //prodsTobuyRequestString += "basketprodlist[" + i + "]=" + prodsTobuy[i] + "&";
-                /*
-                const result = await fetch('/'
-                    ,{
+                console.log("!!!In testrefresh()");
+                
+                fetch('/HomeTest/Partial1',
+                    {
                         method: 'POST',
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify(filters)
-                     }).then(response => response.text()).then(text => window.location.href = '/?filters=' + text);
-                */
+                    })
+                    .then(response => response.text())
+                    .then(html => document.getElementById('partialdiv1').innerHTML = html);
+
             }
         }
 
@@ -218,9 +270,13 @@
     @{
         await Html.RenderPartialAsync("HomeTestSortPanel_View");
     }
+
+    <div id="partialdiv1">
     @{
         await Html.RenderPartialAsync("HomeTestProducts_PartialView");
     }
+    </div>
+
     </main>
         
 <!-----------------------MAIN END------------->
@@ -234,6 +290,7 @@
         </div>
     </footer>
 <!-----------------------FOOTER------------->
+    
 
 <script>
         
