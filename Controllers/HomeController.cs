@@ -11,8 +11,7 @@ using static Azure.Core.HttpHeader;
 using static NuGet.Packaging.PackagingConstants;
 
 namespace Fish_Shop
-{
-    public enum enum_SortProducts { nameasc, namedesc, costasc, costdesc};
+{    
     public class HomeController : Controller
     {
         Fish_ShopContext db;
@@ -25,30 +24,58 @@ namespace Fish_Shop
             _logger = logger;
         }
 
-        public async Task<IActionResult> Index(enum_SortProducts sortorder = enum_SortProducts.nameasc)
+        public async Task<IActionResult> Index()
         {
             @ViewData["Title"] = "Главная";
 
-            IQueryable<Product>? products = db.Products;
-            products = sortorder switch
-            {
-                enum_SortProducts.nameasc => db.Products.OrderBy(p => p.Name),
-                enum_SortProducts.namedesc => db.Products.OrderByDescending(p => p.Name),
-                enum_SortProducts.costasc => db.Products.OrderBy(p => p.Cost),
-                enum_SortProducts.costdesc => db.Products.OrderByDescending(p => p.Cost)
-            };
+            Console.WriteLine("!!!! ENTERED HOME Index() !!!!");
 
-            Console.WriteLine("User.Identity.IsAuthenticated = " + User.Identity.IsAuthenticated);
-            Console.WriteLine("User.Identity.Name = " + User.Identity.Name);
-            Console.WriteLine("User.Identity.AuthenticationType = " + User.Identity.AuthenticationType);
-            Console.WriteLine("User.Identity.GetType = " + User.Identity.GetType);
+            return View("Index", await db.Products.OrderBy(p => p.Name).ToListAsync());
+        }
+
+        public async Task<IActionResult> Products_List([FromBody] string?[] ord_rule)
+        {
+            Console.WriteLine("!!!! ENTERED Partial1() !!!!");
+            foreach (string s in ord_rule) Console.WriteLine("ord_rule = " + s);
+
+            if (ord_rule == null) ord_rule = new string[] { "nameasc", "category_filter_all" };
+
+            IQueryable<Product> prods;
+            string sort_type = ord_rule[0];
+            string?[] filters = new string[ord_rule.Length - 1];
+
+            if (ord_rule[1] == "category_filter_all") prods = db.Products;
+            else
+            {
+                for (int i = 1; i < ord_rule.Length; i++)
+                {
+                    filters[i - 1] = ord_rule[i] switch
+                    {
+                        "category_filter_fish" => "Рыба",
+                        "category_filter_plant" => "Растение",
+                        "category_filter_tool" => "Оборудование"
+                    };
+                }
+                prods = db.Products.Where(p => filters.Contains(p.CategoryId));
+                foreach (string s in filters) Console.WriteLine("filters = " + s);
+                foreach (var p in prods) Console.WriteLine("filtere prods = " + p.Name + " " + p.CategoryId);
+            }
+
+            prods = sort_type switch
+            {
+                "nameasc" => prods.OrderBy(p => p.Name),
+                "namedesc" => prods.OrderByDescending(p => p.Name),
+                "costasc" => prods.OrderBy(p => p.Cost),
+                "costdesc" => prods.OrderByDescending(p => p.Cost)
+            };
 
             string userid;
             if (!User.Identity.IsAuthenticated) userid = db.Users.Where(u => u.UserName == "anonimus@anonimus.ru").Select(u => u.Id).FirstOrDefault();
             else userid = db.Users.Where(u => u.UserName == User.Identity.Name).Select(u => u.Id).FirstOrDefault();
-            Console.WriteLine("userid = " + userid);
 
-            return View("Home_View", await products.ToListAsync());
+            Console.WriteLine("ord_rule = " + ord_rule);
+
+            return PartialView("ProductsList_PartialView", await prods.ToListAsync());
         }
 
         public IActionResult About()

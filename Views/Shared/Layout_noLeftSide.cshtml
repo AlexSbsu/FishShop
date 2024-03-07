@@ -32,7 +32,7 @@
 
     <div style="margin-bottom:50px"> <!-- class="row window-full"-->
         <aside class="col-lg-2 col-md-2 col-sm-12" style="margin-top:50px">
-            
+            <!--------gap---------->
         </aside>
 <!-----------------------MAIN-MY------------->
         
@@ -49,6 +49,27 @@
         </div>
     </footer>
 <!-----------------------FOOTER------------->
+    <script>
+        //-----------------------------------------------------------------------LOAD EVENT PROCESSING-----------------------------------------------//
 
+        window.addEventListener('load', UpdateBasketCounterOnLoad());
+
+        function UpdateBasketCounterOnLoad() {
+
+            if (localStorage.getItem('LocalStorageItem_prodsTobuy') != null) {
+                console.log('!!! prodsTobuyLocalStorageItem NOT NULL');
+
+                let basketcounter = JSON.parse(localStorage.getItem('LocalStorageItem_prodsTobuy'));
+                let prodsTobuyRequestString = JSON.parse(localStorage.getItem('LocalStorageItem_prodsTobuyRequestString'));
+
+                basket.classList.remove('basketEmpty');
+                basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);
+                document.getElementById('basket_counter').innerHTML = basketcounter.length;
+
+                console.log('!!! basketcounter = ' + basketcounter);
+                console.log('!!! prodsTobuyRequestString = ' + prodsTobuyRequestString);
+            }
+        }
+    </script>
 </body>
 </html>

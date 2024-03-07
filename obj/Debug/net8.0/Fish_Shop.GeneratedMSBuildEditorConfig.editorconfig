@@ -90,24 +90,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVRlc3RcUGFydGlhbFZpZXdUZXN0MS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_reps/Fish_Shop/Views/HomeTest/PartialViewTest2.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVRlc3RcUGFydGlhbFZpZXdUZXN0Mi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Git_reps/Fish_Shop/Views/HomeTest/test1.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVRlc3RcdGVzdDEuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Git_reps/Fish_Shop/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_reps/Fish_Shop/Views/Home/Home_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lX1ZpZXcuY3NodG1s
+[D:/Git_reps/Fish_Shop/Views/Home/FilterSide_PartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGaWx0ZXJTaWRlX1BhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git_reps/Fish_Shop/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Git_reps/Fish_Shop/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git_reps/Fish_Shop/Views/Home/ProductsList_PartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0c0xpc3RfUGFydGlhbFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git_reps/Fish_Shop/Views/Home/SortPanel_PartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTb3J0UGFuZWxfUGFydGlhbFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Git_reps/Fish_Shop/Views/Order/Order_Complete.cshtml]
@@ -120,10 +124,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Git_reps/Fish_Shop/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Git_reps/Fish_Shop/Views/Shared/Layout_FilterSide.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dF9GaWx0ZXJTaWRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Git_reps/Fish_Shop/Views/Shared/_LoginPartial.cshtml]

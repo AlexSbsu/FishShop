@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Product>
+
+<div>
+    <h2 style="text-align: center;margin-top:50px;margin-bottom:10px">Рыбёшечки</h2>
+</div>
+
+<div class="dropdown" style="margin-bottom:10px">
+    <select id="sort" class="btn btn-secondary btn-md dropdown-toggle bg-white box-shadow sort_list" style="color:black">
+        <option id="nameasc"  class="sort_item" selected> Имя: По возрастанию  </></option>
+        <option id="namedesc" class="sort_item">          Имя: По убыванию     </></option>
+        <option id="costasc"  class="sort_item">          Цена: По возрастанию </></option>
+        <option id="costdesc" class="sort_item">          Цена: По убыванию    </></option>
+    </select>
+</div> 

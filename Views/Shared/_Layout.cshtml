@@ -2,69 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Rybka</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap-5.3.2-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />    
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <!--<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->    
+    <!--<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
     <script src="~/lib/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 
-    <style>        
+    <style>
     </style>
-    
+
     <script>
+        //-----------------------------------------------------------------------LOAD EVENT PROCESSING-----------------------------------------------//
+        //-->>load porcessing below
+        
+        //-----------------------------------------------------------------------CLICK EVENT PROCESSING-----------------------------------------------//
+
+        document.addEventListener('click', handleClick);
 
         let prodsTobuy = [];
         let prodsTobuyString = "";
-        let prodsTobuyRequestString = "";       
-        //-----------------------------------------------------------------------CLICK EVENT-----------------------------------------------//
-        document.addEventListener('click', handleClick);
+        let prodsTobuyRequestString = "";
 
-        function handleClick(event) {            
-                console.log('user clicked: ', event.target);
-                var btn = event.target;
-                //---MAIN select
-                if (btn.innerHTML.trim() == 'В корзину' && btn.classList.contains("basketAddRemove")) {
-                    btn.innerHTML = 'В корзине';
-                    btn.classList.add('btn-danger');
-                    btn.classList.remove('btn-success');                    
+        function handleClick(event) {
+            console.log('user clicked: ', event.target);
+            var btn = event.target;
+            //---MAIN select
+            if (btn.innerHTML.trim() == 'В корзину' && btn.classList.contains("basketAddRemove")) {
+                btn.innerHTML = 'В корзине';
+                btn.classList.add('btn-danger');
+                btn.classList.remove('btn-success');
 
-                    prodsTobuy.push(btn.id);                                //update Prods array
-                    prodsTobuyString = prodsTobuy.toString();             //update Prods string
+                prodsTobuy.push(btn.id);                                //update Prods array
+                prodsTobuyString = prodsTobuy.toString();             //update Prods string
+                prodsTobuyRequestStringBuild()
+                basketUpdate();
+                prodsTobuyPrint();
+            }
+            else {
+                if (btn.classList.contains("basketAddRemove")) {
+                    btn.innerHTML = 'В корзину';
+                    btn.classList.add('btn-success');
+                    btn.classList.remove('btn-danger');
+
+                    prodsTobuy.splice(prodsTobuy.indexOf(btn.id), 1);   //update Prods array
+                    prodsTobuyString = prodsTobuy.toString();            //update Prods string
                     prodsTobuyRequestStringBuild()
                     basketUpdate();
-                    prodsTobuyPrint();                    
+                    prodsTobuyPrint();
                 }
-                else {
-                    if (btn.classList.contains("basketAddRemove")) {
-                        btn.innerHTML = 'В корзину';
-                        btn.classList.add('btn-success');
-                        btn.classList.remove('btn-danger');                                   
-
-                        prodsTobuy.splice(prodsTobuy.indexOf(btn.id), 1);   //update Prods array
-                        prodsTobuyString = prodsTobuy.toString();            //update Prods string
-                        prodsTobuyRequestStringBuild()
-                        basketUpdate();
-                        prodsTobuyPrint();                        
-                    }
-                }
-                //---BASKET change amount
-                if (btn.classList.contains("btn-minus")) {
-                    let grp_id = btn.id.slice(0, -6);
-                    let grp_input_id = grp_id + "_amount";
-                    if (grp_input_id.value > 0) grp_input_id.value -= 1;                    
-                }
-                if (btn.classList.contains("btn-plus")) {
-                    let grp_id = btn.id.slice(0, -6);
-                    let grp_input_id = grp_id + "_amount";
-                    if (grp_input_id.value < 999) grp_input_id.value += 1;
-                }                                
+            }
+            //---BASKET change amount
+            if (btn.classList.contains("btn-minus")) {
+                let grp_id = btn.id.slice(0, -6);
+                let grp_input_id = grp_id + "_amount";
+                if (grp_input_id.value > 0) grp_input_id.value -= 1;
+            }
+            if (btn.classList.contains("btn-plus")) {
+                let grp_id = btn.id.slice(0, -6);
+                let grp_input_id = grp_id + "_amount";
+                if (grp_input_id.value < 999) grp_input_id.value += 1;
+            }
         }
 
         function prodsTobuyPrint() {
@@ -88,43 +92,44 @@
             if (prodsTobuy.length == 0) {
                 basket.classList.add('basketEmpty');
                 basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);
-                prodsTobuySaveToCookie();
+                prodsTobuySaveToLocalStorage();
             }
             else {
                 basket.classList.remove('basketEmpty');
                 basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);
-                prodsTobuySaveToCookie();
+                prodsTobuySaveToLocalStorage();
             }
         }
-        
-        function prodsTobuySaveToCookie() {
-            var prodsTobuycookieVal = JSON.stringify(prodsTobuy);
-            document.cookie = "prodsTobuycookie=" + prodsTobuycookieVal;
-            //.getCookie('prodsTobuycookie')
-            console.log('Cookies prodsTobuycookie saved : ' + document.cookie);
+
+        function prodsTobuySaveToLocalStorage() {            
+            localStorage.setItem('LocalStorageItem_prodsTobuy', JSON.stringify(prodsTobuy));
+            localStorage.setItem('LocalStorageItem_prodsTobuyRequestString', JSON.stringify(prodsTobuyRequestString));
+            console.log('localStorage prodsTobuy objeject saved : ' + localStorage.prodsTobuy);
+            console.log('localStorage prodsTobuyLocalStorageItem object saved : ' + localStorage.prodsTobuyRequestString);
         }
-        
+
         //-----------------------------------------------------------------------CLICK EVENT-----------------------------------------------//
 
         //-----------------------------------------------------------------------CHANGE EVENT-----------------------------------------------//
 
         document.addEventListener('change', handlchange);
-        
-        function handlchange(event) { 
-            console.log('!!!changed');
+
+        function handlchange(event) {
+            console.log('!!!Inside change action');
             var el = event.target;
-            
-            if ( el.classList.contains('sort_list') || el.classList.contains('filter_item') ) 
-            {
-                console.log('!!!Inside change action');
+
+            if (el.classList.contains('sort_list') || el.classList.contains('filter_item')) {
+                console.log('!!!POINT_1');
                 let filters = [];
+                console.log('!!!POINT_2');
                 //---------------------------sort_list
                 const sortel = document.querySelector("#sort");
                 const id = sortel.options[sortel.selectedIndex].id;
+                console.log('!!!POINT_3');
 
                 console.log('selected sort element id = ' + id);
                 filters.push(id);
-
+                console.log('!!!POINT_4');
                 //---------------------------filter_item
                 let check_arr = [];
 
@@ -138,97 +143,127 @@
                 console.log('check_arr[2] = ' + check_arr[2]);
                 console.log('check_arr[3] = ' + check_arr[3]);
 
+                console.log('!!!POINT_4');
+
                 let notall_checked = false;
                 for (let i = 0; i < check_arr.length; i++) {
                     if (check_arr[i]) notall_checked = true;
-                }                
+                }
                 console.log('notall_checked = ' + notall_checked);
 
-                if (el.id == 'category_filter_all') {
-                        if (check_arr[0] && notall_checked) {
-                            document.querySelector('#category_filter_fish').checked = false;
-                            document.querySelector('#category_filter_plant').checked = false;
-                            document.querySelector('#category_filter_tool').checked = false;
-                        }
-                        if (!check_arr[0] && !notall_checked) {
-                            document.querySelector('#category_filter_all').checked = true;
-                        }
+                if (el.id == 'category_filter_all' && !el.classList.contains('sort_list')) {
+                    if (check_arr[0] && notall_checked) {
+                        document.querySelector('#category_filter_fish').checked = false;
+                        document.querySelector('#category_filter_plant').checked = false;
+                        document.querySelector('#category_filter_tool').checked = false;
+                    }
+                    if (!check_arr[0] && !notall_checked) {
+                        document.querySelector('#category_filter_all').checked = true;
+                    }
                 }
-                if (el.id != 'category_filter_all') {
-                        if (check_arr[0] && notall_checked) {
-                            document.querySelector('#category_filter_all').checked = false;                            
-                        }
-                        if (!check_arr[0] && !notall_checked) {
-                            document.querySelector('#category_filter_all').checked = true;
-                        }
+                if (el.id != 'category_filter_all' && !el.classList.contains('sort_list')) {
+                    if (check_arr[0] && notall_checked) {
+                        document.querySelector('#category_filter_all').checked = false;
+                    }
+                    if (!check_arr[0] && !notall_checked) {
+                        document.querySelector('#category_filter_all').checked = true;
+                    }
                 }
+
+                console.log('!!!POINT_5');
 
                 let checked = document.querySelectorAll('.filter_item');
+
                 checked.forEach(e => { if (e.checked) filters.push(e.id); });
 
-                filters.forEach( e => { console.log('filters to send element : ' + e); });
-                
-                let filters_req = "";
-                let i = 0;
-                for (let i = 0; i < filters.length; i++) { 
-                    filters_req += 'filters[' + i + ']=' + filters[i] + '&';
-                }                
-                filters_req = filters_req.slice(0, filters_req.length - 1);
-                console.log('filters_req = ' + filters_req);
+                filters.forEach(e => { console.log('filters to send element : ' + e); });
+                               
+                console.log('!!!POINT_6');
 
-                //window.location.href = '/?filters=' + filters_req)
-                //prodsTobuyRequestString += "basketprodlist[" + i + "]=" + prodsTobuy[i] + "&";
-                /*
-                const result = await fetch('/'
-                    ,{
+                fetch('/Home/Products_List',
+                    {
                         method: 'POST',
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify(filters)
-                     }).then(response => response.text()).then(text => window.location.href = '/?filters=' + text);
-                */
+                    })
+                    .then(response => response.text())
+                    .then(html => document.getElementById('partialdiv1').innerHTML = html);
+
+                console.log('!!!POINT_7');
             }
+
         }
 
+       
         //-----------------------------------------------------------------------CHANGE EVENT-----------------------------------------------//
     </script>
 </head>
-
 <body class="container-fluid" style="max-width:1500px">
-    
-    <!-----------------------HEADER-MY------------->    
-    
+
+    <!-----------------------HEADER-MY------------->
     <!---------NAVIGATION START--------->
-            @{
-                await Html.RenderPartialAsync("Layout_NavbarPartial");
-            }
+    @{
+        await Html.RenderPartialAsync("Layout_NavbarPartial");
+    }
     <!---------NAVIGATION END--------->
 
-    <!---------FILTER SIDE START------>
+    <div class="row" style="margin-bottom:50px">
+
+        <!---------FILTER SIDE START------>
+        @{
+            await Html.RenderPartialAsync("FilterSide_PartialView");
+        }
+        <!---------FILTER SIDE END------>
+
+        <!-----------------------MAIN START------------->
+        @RenderBody()
+        <main class="col-lg-10 col-md-10 col-sm-12">
             @{
-                await Html.RenderPartialAsync("Layout_FilterSide");
+                await Html.RenderPartialAsync("SortPanel_PartialView");
             }
-    <!---------FILTER SIDE END------>
 
-<!-----------------------MAIN START------------->
+            <div id="partialdiv1">
+                @{
+                    await Html.RenderPartialAsync("ProductsList_PartialView");
+                }
+            </div>
 
-            @RenderBody()
-        
-<!-----------------------MAIN END------------->
+        </main>
+
+        <!-----------------------MAIN END------------->
     </div>
-        <br />
-<!-----------------------FOOTER------------->
+    <br />
+    <!-----------------------FOOTER------------->
     <footer class="border-top footer fixed-bottom text-muted bg-white box-shadow">
         <div class="container">
             &copy; 2024 - Fish_Shop <!-- - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> -->
-            @RenderSection("Footer",false)
+            @RenderSection("Footer", false)
         </div>
     </footer>
-<!-----------------------FOOTER------------->
-
-<script>
-        
-</script>
-    
+    <!-----------------------FOOTER------------->
     </div>
+
+    <script>
+        //-----------------------------------------------------------------------LOAD EVENT PROCESSING-----------------------------------------------//
+
+        window.addEventListener('load', UpdateBasketCounterOnLoad());
+
+        function UpdateBasketCounterOnLoad() {
+
+            if (localStorage.getItem('LocalStorageItem_prodsTobuy') != null) {
+                console.log('!!! prodsTobuyLocalStorageItem NOT NULL');
+
+                let basketcounter = JSON.parse(localStorage.getItem('LocalStorageItem_prodsTobuy'));
+                let prodsTobuyRequestString = JSON.parse(localStorage.getItem('LocalStorageItem_prodsTobuyRequestString'));
+
+                basket.classList.remove('basketEmpty');
+                basket.setAttribute("href", "/Basket/Index?" + prodsTobuyRequestString);
+                document.getElementById('basket_counter').innerHTML = basketcounter.length;
+
+                console.log('!!! basketcounter = ' + basketcounter);
+                console.log('!!! prodsTobuyRequestString = ' + prodsTobuyRequestString);
+            }
+        }
+ </script>        
 </body>
 </html>
