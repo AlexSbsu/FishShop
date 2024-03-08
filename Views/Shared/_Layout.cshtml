@@ -20,19 +20,25 @@
 
     <script>
         //-----------------------------------------------------------------------LOAD EVENT PROCESSING-----------------------------------------------//
-        //-->>load porcessing below
+        
+       
         
         //-----------------------------------------------------------------------CLICK EVENT PROCESSING-----------------------------------------------//
 
         document.addEventListener('click', handleClick);
 
-        let prodsTobuy = [];
+        let prodsTobuy = [];        
         let prodsTobuyString = "";
         let prodsTobuyRequestString = "";
+              
 
         function handleClick(event) {
             console.log('user clicked: ', event.target);
             var btn = event.target;
+            
+
+            //prodsTobuy = JSON.parse(localstorage.getItem('LocalStorageItem_prodsTobuy'));
+            console.log('prodsTobuy=' + prodsTobuy);
             //---MAIN select
             if (btn.innerHTML.trim() == 'В корзину' && btn.classList.contains("basketAddRemove")) {
                 btn.innerHTML = 'В корзине';
@@ -40,7 +46,7 @@
                 btn.classList.remove('btn-success');
 
                 prodsTobuy.push(btn.id);                                //update Prods array
-                prodsTobuyString = prodsTobuy.toString();             //update Prods string
+                prodsTobuyString = prodsTobuy.toString();               //update Prods string
                 prodsTobuyRequestStringBuild()
                 basketUpdate();
                 prodsTobuyPrint();
@@ -52,7 +58,7 @@
                     btn.classList.remove('btn-danger');
 
                     prodsTobuy.splice(prodsTobuy.indexOf(btn.id), 1);   //update Prods array
-                    prodsTobuyString = prodsTobuy.toString();            //update Prods string
+                    prodsTobuyString = prodsTobuy.toString();           //update Prods string
                     prodsTobuyRequestStringBuild()
                     basketUpdate();
                     prodsTobuyPrint();
@@ -104,8 +110,8 @@
         function prodsTobuySaveToLocalStorage() {            
             localStorage.setItem('LocalStorageItem_prodsTobuy', JSON.stringify(prodsTobuy));
             localStorage.setItem('LocalStorageItem_prodsTobuyRequestString', JSON.stringify(prodsTobuyRequestString));
-            console.log('localStorage prodsTobuy objeject saved : ' + localStorage.prodsTobuy);
-            console.log('localStorage prodsTobuyLocalStorageItem object saved : ' + localStorage.prodsTobuyRequestString);
+            console.log('localStorage prodsTobuy object saved : '              + localStorage.getItem('LocalStorageItem_prodsTobuy'));
+            console.log('localStorage prodsTobuyRequestString object saved : ' + localStorage.getItem('LocalStorageItem_prodsTobuyRequestString'));
         }
 
         //-----------------------------------------------------------------------CLICK EVENT-----------------------------------------------//
@@ -244,9 +250,7 @@
     </div>
 
     <script>
-        //-----------------------------------------------------------------------LOAD EVENT PROCESSING-----------------------------------------------//
-
-        window.addEventListener('load', UpdateBasketCounterOnLoad());
+        window.addEventListener('DOMContentLoaded', UpdateBasketCounterOnLoad());
 
         function UpdateBasketCounterOnLoad() {
 
@@ -254,6 +258,7 @@
                 console.log('!!! prodsTobuyLocalStorageItem NOT NULL');
 
                 let basketcounter = JSON.parse(localStorage.getItem('LocalStorageItem_prodsTobuy'));
+                //prodsTobuy = JSON.parse(localstorage.getItem('LocalStorageItem_prodsTobuy'));
                 let prodsTobuyRequestString = JSON.parse(localStorage.getItem('LocalStorageItem_prodsTobuyRequestString'));
 
                 basket.classList.remove('basketEmpty');
@@ -262,8 +267,19 @@
 
                 console.log('!!! basketcounter = ' + basketcounter);
                 console.log('!!! prodsTobuyRequestString = ' + prodsTobuyRequestString);
+
+                let prodsarray = JSON.parse(localStorage.getItem('LocalStorageItem_prodsTobuy'));
+                console.log('prodsarray = ' + prodsarray);
+                prodsarray.forEach(id => {
+                    console.log('prodsarray id element = ' + id)
+                    btn = document.getElementById(id);
+                    btn.innerHTML = 'В корзине';
+                    btn.classList.add('btn-danger');
+                    btn.classList.remove('btn-success');
+                });
             }
         }
+
  </script>        
 </body>
 </html>

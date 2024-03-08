@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Git_reps\\Fish_Shop\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\shared\\layout_navbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\shared\\layout_navbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4503CE48-869D-41E5-A6FA-007B5C280A5F}|Fish_Shop.csproj|d:\\git_reps\\fish_shop\\views\\shared\\layout_noleftside.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
@@ -99,8 +99,7 @@
               "ViewState": "AQIAAAEAAAAAAAAAAAAgwCkAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-13T20:55:57.198Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -113,18 +112,17 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-27T22:22:51.641Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "site.css",
               "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "D:\\Git_reps\\Fish_Shop\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAoAAAAAAAAAAADwvzMAAAASAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAADwvyEAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-02-16T15:08:15.232Z",
               "IsPinned": true,
@@ -141,8 +139,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-28T02:05:07.517Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -155,8 +152,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-03T04:18:21.904Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -182,8 +178,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T23:47:27.918Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -196,18 +191,17 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-04T23:07:33.186Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Git_reps\\Fish_Shop\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAOEAAAAAAAAAAAAgwAMBAABWAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-06T05:07:09.793Z",
               "IsPinned": true,
@@ -224,8 +218,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-13T20:41:56.153Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -238,8 +231,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-04T23:50:58.819Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -252,8 +244,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-06T17:07:18.821Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -266,12 +257,11 @@
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-06T16:57:18.976Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Layout_NavbarPartial.cshtml",
               "DocumentMoniker": "D:\\Git_reps\\Fish_Shop\\Views\\Shared\\Layout_NavbarPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Layout_NavbarPartial.cshtml",
@@ -279,8 +269,7 @@
               "RelativeToolTip": "Views\\Shared\\Layout_NavbarPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAABvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-06T17:06:37.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-06T17:06:37.538Z"
             },
             {
               "$type": "Document",
@@ -292,8 +281,7 @@
               "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-06T17:06:54.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-06T17:06:54.162Z"
             },
             {
               "$type": "Document",
@@ -305,8 +293,7 @@
               "RelativeToolTip": "Views\\Shared\\Layout_noLeftSide.cshtml",
               "ViewState": "AQIAABgAAAAAAAAAAAAAADMAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-06T23:33:52.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-06T23:33:52.531Z"
             },
             {
               "$type": "Document",
@@ -318,8 +305,7 @@
               "RelativeToolTip": "Views\\Basket\\Basket_View_Step1.cshtml",
               "ViewState": "AQIAAKsAAAAAAAAAAAAAADMAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T04:23:38.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T04:23:38.289Z"
             },
             {
               "$type": "Document",
@@ -331,8 +317,7 @@
               "RelativeToolTip": "Views\\Product\\Product_View.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T04:38:10.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T04:38:10.826Z"
             },
             {
               "$type": "Document",
@@ -344,8 +329,7 @@
               "RelativeToolTip": "Views\\Order\\Order_Complete.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T04:38:13.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T04:38:13.313Z"
             }
           ]
         }
