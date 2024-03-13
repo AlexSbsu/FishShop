@@ -6,50 +6,39 @@
 <script type="text/javascript">
         let Totalcost=0;        
 
-        document.addEventListener('click', handleClick );
-        //document.addEventListener('click', test1);
+        document.addEventListener('click', handleClick );        
 
         function handleClick(event) {
             console.log('user clicked: ', event.target);
-            var btn = event.target;
-            
+            var btn = event.target;            
             if (btn.id == 'button_make_order') CreateOrder();
-
             if (btn.classList.contains("btn-minus") || btn.classList.contains("btn-plus")) Change_amount(btn);
         }
 
-        console.log('<<-------------------POINT0');
-
         function Change_amount(btn) { 
-            let grp_id = btn.id.slice(0, -6);
-            console.log('grp_id =' + grp_id);
+            let grp_id = btn.id.slice(0, -6);        
             let input_amount_id = grp_id + "+_amount";
-            console.log('input_amount_id =' + input_amount_id);
-
-            if (btn.classList.contains("btn-minus")) {
-                console.log('click in minus...');                            
-                let amount = document.getElementById(input_amount_id).getAttribute('value');                
-                console.log('amount = ' + amount);
+            
+            if (btn.classList.contains("btn-minus")) {                
+                let amount = document.getElementById(input_amount_id).getAttribute('value');                                
                 if (amount > 0) {
                     amount--;                    
                     document.getElementById(input_amount_id).setAttribute('value', amount);
                 }
             }
             if (btn.classList.contains("btn-plus")) {
-            let amount = document.getElementById(input_amount_id).getAttribute('value');
-                console.log('click in plus...');
-                console.log('amount = ' + amount);
+            let amount = document.getElementById(input_amount_id).getAttribute('value');                
                 if (amount < 999) {
                     amount++;                    
                     document.getElementById(input_amount_id).setAttribute('value', amount);
                 }
             }
-            console.log('<<-------------------POINT1');
+            
             let prod_cost = document.getElementById(grp_id + '+_cost');
             let prod_amount = document.getElementById(grp_id + '+_amount');
             let cost = parseFloat(prod_cost.getAttribute('prod_cost_init')) * parseFloat(prod_amount.getAttribute('value'));
             prod_cost.innerHTML = cost;
-            console.log('<<-------------------POINT2');
+            
             const prods_costs = document.querySelectorAll('.prod_cost');            
             let totalcost = 0;            
             prods_costs.forEach(function (el) {
@@ -61,24 +50,16 @@
         //-----------------------ORDER COMPLETION           
         
         async function CreateOrder() {                       
-                console.log('--------------------In Complete_order1()--1');
                         
             let allidnodes = document.querySelectorAll('.id');
-
-            console.log('--------------------In Complete_order1()--2');
 
             let BasketItems = [];
             allidnodes.forEach(function (node) {
                 let ProductId = node.getAttribute('id');
-                console.log('id = ' + ProductId);
                 let Name = document.getElementById(ProductId + '+_name').innerHTML.trim();
-                console.log('Name = ' + Name);
                 let Amount = document.getElementById(ProductId + '+_amount').getAttribute('value');
-                console.log('Amount = ' + Amount);
                 let Cost = document.getElementById(ProductId + '+_cost').getAttribute('prod_cost_init').toString().replace(',', '.');
-                console.log('Cost = ' + Cost);
                 let FullCost = document.getElementById(ProductId + '+_cost').innerHTML.toString().replace(',', '.');
-                console.log('FullCost = ' + FullCost);
                 let Comment = document.getElementById('comment').innerHTML;
                                 
                 let bi = {};
@@ -92,22 +73,15 @@
             });
                         
             let Comment = document.getElementById('comment').innerHTML;
-                console.log('comment = ' + Comment);                
             let TotalCost = document.getElementById('total_cost').innerHTML.toString().replace(',', '.');
-                console.log('TotalCost = ' + TotalCost.toString());            
-            
+                 
             order = {};
             order.Comment = Comment;
             order.TotalCost = TotalCost;
             order.BasketItems = BasketItems;
-                       
-            console.log('Send request to /Order/CreateOrder');
-
-            console.log('--->>>JSON.stringify(order) =' + JSON.stringify(order));
+                 
             let jstr = JSON.stringify(order);
-            console.log('--->>>jstr =' + jstr);
-
-            //const result = await
+     
             const result = await fetch('/Order/Order_Create',
                 {
                     method: 'POST',
@@ -115,46 +89,8 @@
                     body: JSON.stringify(order)
             }).then(response => response.text())
             .then(text => window.location.href = '/order/Order_Complete?orderid=' + text);
+      }
         
-            console.log('Send request to /Order/CreateOrder COMPLETED');
-            
-            //if(result.ok) window.location.href = '/order/Order_Complete';
-        }        
-        
-        
-
-        console.log('<<-------------------POINT6');
-        
-        function test1() {
-            console.log('In test1 :');
-            window.location.href = '/order/test1';
-            //fetch('/Order/test1').then(resp=>resp.json()).then(data => { console.log(data) } ).catch(error => console.error('Unable to get items.', error));
-        }
-        async function test2() {
-            console.log('In test2 :');
-            var data = { 'name': 'xxxNAMEzzz' };
-            const res = await fetch("/Order/test2", {
-                                            method: "POST",
-                                            body: JSON.stringify('xxxNAMEzzz'),
-                                            headers: { "Content-Type": "application/json" }
-                                        });
-
-            const result = await res.json();
-            console.log('result = ' + result);
-            alert('Name : ' + result.name + '\nDate : ' + result.dateTime);
-        }
-
-        function test3() {            
-            let str = "string from POST method of fetch on Client";
-            fetch('/Order/test3', { 
-                method: 'POST', 
-                headers: {'Accept': 'text/plain','Content-Type': 'application/json'},
-                body: JSON.stringify("string99999")
-            })
-            .catch(error => console.error('Unable to add item.', error));
-        }
-    console.log('<<-------------------POINT_END');
-
 </script>
 
 @model IEnumerable<Product>

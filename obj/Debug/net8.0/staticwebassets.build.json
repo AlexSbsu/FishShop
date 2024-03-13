@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9NMLCf+Noab1i9en375NsDFWofw4ZpQyctfGyMiS+jc=",
+  "Hash": "NoNz8A9+43s4ZTmSpnh0IvNGl18cX3xDLUL2+0Qw7M8=",
   "Source": "Fish_Shop",
   "BasePath": "_content/Fish_Shop",
   "Mode": "Default",
@@ -1727,12 +1727,12 @@
       "OriginalItemSpec": "wwwroot\\images\\trava_Плачущий мох.jpg"
     },
     {
-      "Identity": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Утрикулярия  граминифолия.jpg",
+      "Identity": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Утрикулярия граминифолия.jpg",
       "SourceId": "Fish_Shop",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Git_reps\\Fish_Shop\\wwwroot\\",
       "BasePath": "_content/Fish_Shop",
-      "RelativePath": "images/trava_Утрикулярия  граминифолия.jpg",
+      "RelativePath": "images/trava_Утрикулярия граминифолия.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1743,7 +1743,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\trava_Утрикулярия  граминифолия.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\trava_Утрикулярия граминифолия.jpg"
     },
     {
       "Identity": "D:\\Git_reps\\Fish_Shop\\wwwroot\\images\\trava_Элодея зубчатая.jpg",

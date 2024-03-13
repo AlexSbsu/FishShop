@@ -13,8 +13,6 @@ namespace Fish_Shop.Controllers
 
         public IActionResult Product([FromQuery]string productid)
         {
-            Console.WriteLine("productid = " + productid);
-
             Product product = db.Products.FirstOrDefault(p=>p.Id==productid);
             
             return View("Product_View", product);

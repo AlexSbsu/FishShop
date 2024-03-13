@@ -9,26 +9,19 @@ namespace Fish_Shop
     public class BasketController : Controller
     {        
         Fish_ShopContext db;
-
-        //private readonly ILogger<HomeController> _logger;
-
         public BasketController(ILogger<HomeController> logger, Fish_ShopContext context)
         {
-            db = context;        
-            //_logger = logger;
+            db = context;         
         }
         public async Task<IActionResult> Index(string[] basketprodlist)
-        {
-            //Cookies
-            
+        {            
             string? prodsTobuycookie;
             if (Request.Cookies.ContainsKey("prodsTobuycookie"))
                 prodsTobuycookie = Request.Cookies["prodsTobuycookie"];
             else
             {
                 prodsTobuycookie = "No prodsTobuycookie cookies found";
-                Response.Cookies.Append("prodsTobuycookie","empty");
-                //prodsTobuycookie = Request.Cookies["prodsTobuycookie"];
+                Response.Cookies.Append("prodsTobuycookie","empty");                
             } 
             Console.WriteLine("Request.Cookies prodsTobuycookie = " + Request.Cookies["prodsTobuycookie"]);
             Console.WriteLine("Request.Cookies All Cookies : " + Request.Cookies.ToString());

@@ -16,36 +16,22 @@
                     <div class="navbar-nav" style="display: flex; justify-content: space-between; align-items: center;">
                         <a class="nav-link" href="feedback.html" style="display:none"> История заказов </a>
                         <a class="nav-link" href="feedback.html" style="display:none"> Обратная связь  </a>
-                        <a class="nav-link" aria-current="page" asp-controller="Home" asp-action="about"> О нас </a>
-                        <!-------------Dropdown------------->
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Разное</a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a class="dropdown-item" href="#">Item1</a></li>
-                                <li><a class="dropdown-item" href="#">Item2</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Item3</a></li>
-                            </ul>
-                        </div>
-                    <!-------------Dropdown-MY------------->                            
-
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Поиск...." aria-label="Поиск...">
-                                <button class="btn btn-outline-success" type="submit">Поиск</button>
-                            </form>
-                       
+                        <a class="nav-link" aria-current="page" asp-controller="Home" asp-action="about"> О нас </a>                                          
                     </div>
                 </div>
                 <!-------------Collapsed Menu END------------->                
                 
-                <!-------------Basket START------------------->
+                <!-------------Login START------------->
                     @{
-                        await Html.RenderPartialAsync("_LoginPartial");
-                    }                            
+                            await Html.RenderPartialAsync("_LoginPartial");
+                     }                            
+                 <!-------------Login END------------->
+
+                <!-------------Basket START------------------->                   
+
                     <a id="basket" class="btn btn-outline-secondary basketEmpty">
                         <img src="/images/shopping-cart.png" width="16" height="16" /> <span id="basket_counter">0</span>
-                    </a>
-              
+                    </a>              
                 <!-------------Basket END--------------------->
             </div>
         </nav>

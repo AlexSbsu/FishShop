@@ -1,4 +1,3 @@
-using Fish_Shop.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -28,14 +27,15 @@ namespace Fish_Shop
         {
             @ViewData["Title"] = "Главная";
 
-            Console.WriteLine("!!!! ENTERED HOME Index() !!!!");
+			var products = db.Products.ToList();
+			foreach (var p in products) Console.WriteLine($"Product : {p.Id} - {p.Name} - {p.Amount} - {p.Units} - {p.Cost}");
 
-            return View("Index", await db.Products.OrderBy(p => p.Name).ToListAsync());
+
+			return View("Index", await db.Products.OrderBy(p => p.Name).ToListAsync());
         }
 
         public async Task<IActionResult> Products_List([FromBody] string?[] ord_rule)
         {
-            Console.WriteLine("!!!! ENTERED Partial1() !!!!");
             foreach (string s in ord_rule) Console.WriteLine("ord_rule = " + s);
 
             if (ord_rule == null) ord_rule = new string[] { "nameasc", "category_filter_all" };
@@ -73,25 +73,12 @@ namespace Fish_Shop
             if (!User.Identity.IsAuthenticated) userid = db.Users.Where(u => u.UserName == "anonimus@anonimus.ru").Select(u => u.Id).FirstOrDefault();
             else userid = db.Users.Where(u => u.UserName == User.Identity.Name).Select(u => u.Id).FirstOrDefault();
 
-            Console.WriteLine("ord_rule = " + ord_rule);
-
             return PartialView("ProductsList_PartialView", await prods.ToListAsync());
         }
 
         public IActionResult About()
         {
             return View();
-        }        
-               
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
