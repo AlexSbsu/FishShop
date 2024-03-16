@@ -4,7 +4,6 @@ namespace Fish_Shop
 {
     public class Product
     {
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Id { get; set; } = Guid.NewGuid().ToString();
 
         [Required]
